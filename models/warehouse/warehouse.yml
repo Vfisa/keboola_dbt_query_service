@@ -1,0 +1,8 @@
+groups:
+  - name: finance
+    owner:
+      # 'name' or 'email' is required; additional properties allowed
+      email: fisa@keboola.com
+  - name: mart
+    owner:
+      email: fisa@keboola.com

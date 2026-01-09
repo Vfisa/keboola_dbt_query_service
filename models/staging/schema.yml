@@ -1,0 +1,112 @@
+version: 2
+
+models:
+    - name: stg_customer
+      config:
+        group: staging
+      tags:
+        - staging
+      docs:
+        node_color: "yellow"
+      meta:
+        owner: fisa@keboola.com
+      columns:              
+          - name: "CUSTOMER_ID"
+            tests:
+                - not_null
+                - unique
+
+    - name: stg_employees
+      config:
+        group: staging
+      tags:
+        - staging
+      docs:
+        node_color: "yellow"
+      meta:
+        owner: fisa@keboola.com
+      columns:              
+          - name: "EMPLOYEE_ID"
+            tests:
+                - not_null
+                - unique         
+
+    - name: stg_products
+      config:
+        group: staging  
+      tags:
+        - staging
+      docs:
+        node_color: "yellow"
+      meta:
+        owner: fisa@keboola.com
+      columns:              
+          - name: "PRODUCT_ID"
+            tests:
+                - not_null
+                - unique
+
+    - name: stg_orders
+      config:
+        group: staging
+      tags:
+        - staging
+      docs:
+        node_color: "yellow"
+      meta:
+        owner: fisa@keboola.com
+      columns:              
+          - name: "ORDER_ID"
+            tests:
+                - not_null
+                - unique
+
+    - name: stg_order_details
+      config:
+        group: staging
+      tags:
+        - staging
+      docs:
+        node_color: "yellow"
+      meta:
+        owner: fisa@keboola.com
+      tests:
+          - dbt_expectations.expect_compound_columns_to_be_unique:
+              column_list: ["ORDER_ID", "PRODUCT_ID"]
+      columns:              
+          - name: "ORDER_ID"
+            tests:
+                - not_null
+          - name: "PRODUCT_ID"
+            tests:
+                - not_null
+
+    - name: stg_shippers
+      config:
+        group: staging  
+      tags:
+        - staging
+      docs:
+        node_color: "yellow"
+      meta:
+        owner: fisa@keboola.com
+      columns:              
+          - name: "SHIPPER_ID"
+            tests:
+                - not_null
+                - unique
+
+    - name: stg_suppliers
+      config:
+        group: staging
+      tags:
+        - staging
+      docs:
+        node_color: "yellow"
+      meta:
+        owner: fisa@keboola.com
+      columns:              
+          - name: "SUPPLIER_ID"
+            tests:
+                - not_null
+                - unique

@@ -1,0 +1,652 @@
+[0m19:30:07.393925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ee69b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10650e2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10650dfc0>]}
+
+
+============================== 19:30:07.397955 | 3531e6e8-ecc4-4efb-b7a8-f88ba96cd530 ==============================
+[0m19:30:07.397955 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:30:07.398600 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'write_json': 'True', 'introspect': 'True', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'partial_parse': 'True', 'printer_width': '80', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'version_check': 'True', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'indirect_selection': 'eager', 'warn_error': 'None', 'use_colors': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'target_path': 'None', 'fail_fast': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m19:30:07.419734 [info ] [MainThread]: dbt version: 1.11.2
+[0m19:30:07.420614 [info ] [MainThread]: python version: 3.10.19
+[0m19:30:07.420959 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m19:30:07.421268 [info ] [MainThread]: os info: macOS-15.6.1-arm64-arm-64bit
+[0m19:30:07.423747 [info ] [MainThread]: Using profiles dir at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service
+[0m19:30:07.424213 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m19:30:07.424515 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m19:30:07.487854 [info ] [MainThread]: Configuration:
+[0m19:30:07.488442 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:30:07.488759 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:30:07.489022 [info ] [MainThread]: Required dependencies:
+[0m19:30:07.489509 [debug] [MainThread]: Executing "git --help"
+[0m19:30:07.514337 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:30:07.515140 [debug] [MainThread]: STDERR: "b''"
+[0m19:30:07.515506 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:30:07.515848 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:30:07.516160 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:30:07.516445 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'keboola_northwind'
+
+
+[0m19:30:07.968546 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.64154834, "process_in_blocks": "0", "process_kernel_time": 0.22585, "process_mem_max_rss": "107806720", "process_out_blocks": "0", "process_user_time": 0.857744}
+[0m19:30:07.969376 [debug] [MainThread]: Command `dbt debug` failed at 19:30:07.969278 after 0.64 seconds
+[0m19:30:07.969980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ee69b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105381000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105386c20>]}
+[0m19:30:07.970533 [debug] [MainThread]: Flushing usage events
+[0m19:30:08.495972 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:30:37.173662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068c69e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c0e2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c0dfc0>]}
+
+
+============================== 19:30:37.177195 | d121b4f6-7bee-452b-809a-6aa88b8911d6 ==============================
+[0m19:30:37.177195 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:30:37.177693 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'log_format': 'default', 'use_colors': 'True', 'no_print': 'None', 'printer_width': '80', 'empty': 'None', 'debug': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'invocation_command': 'dbt debug', 'write_json': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'static_parser': 'True'}
+[0m19:30:37.188887 [info ] [MainThread]: dbt version: 1.11.2
+[0m19:30:37.190836 [info ] [MainThread]: python version: 3.10.19
+[0m19:30:37.191791 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m19:30:37.192761 [info ] [MainThread]: os info: macOS-15.6.1-arm64-arm-64bit
+[0m19:30:37.196426 [info ] [MainThread]: Using profiles dir at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service
+[0m19:30:37.196906 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m19:30:37.197218 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m19:30:37.259494 [info ] [MainThread]: Configuration:
+[0m19:30:37.259970 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:30:37.260236 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:30:37.260627 [info ] [MainThread]: Required dependencies:
+[0m19:30:37.261256 [debug] [MainThread]: Executing "git --help"
+[0m19:30:37.277766 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:30:37.278527 [debug] [MainThread]: STDERR: "b''"
+[0m19:30:37.278839 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:30:37.279133 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:30:37.279403 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:30:37.279660 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'keboola_northwind'
+
+
+[0m19:30:37.282286 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.1616877, "process_in_blocks": "0", "process_kernel_time": 0.179525, "process_mem_max_rss": "107593728", "process_out_blocks": "0", "process_user_time": 0.781997}
+[0m19:30:37.282818 [debug] [MainThread]: Command `dbt debug` failed at 19:30:37.282749 after 0.16 seconds
+[0m19:30:37.283264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068c69e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069b3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cbb3d0>]}
+[0m19:30:37.283625 [debug] [MainThread]: Flushing usage events
+[0m19:30:37.855603 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:31:21.051440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061a69e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076091e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107608eb0>]}
+
+
+============================== 19:31:21.054709 | 10414d47-4c62-4fb1-828c-c6773443f2af ==============================
+[0m19:31:21.054709 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:31:21.055140 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'target_path': 'None', 'introspect': 'True', 'fail_fast': 'False', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'debug': 'False', 'partial_parse': 'True', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service'}
+[0m19:31:21.067540 [info ] [MainThread]: dbt version: 1.11.2
+[0m19:31:21.069666 [info ] [MainThread]: python version: 3.10.19
+[0m19:31:21.070167 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m19:31:21.070458 [info ] [MainThread]: os info: macOS-15.6.1-arm64-arm-64bit
+[0m19:31:21.074227 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'KEBOOLA_NORTHWIND_BASE_URL'
+[0m19:31:21.077055 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.07259092, "process_in_blocks": "0", "process_kernel_time": 0.202244, "process_mem_max_rss": "104972288", "process_out_blocks": "0", "process_user_time": 0.74624}
+[0m19:31:21.077623 [debug] [MainThread]: Command `dbt debug` failed at 19:31:21.077540 after 0.07 seconds
+[0m19:31:21.077990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061a69e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107605de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076b6020>]}
+[0m19:31:21.078328 [debug] [MainThread]: Flushing usage events
+[0m19:31:21.473524 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:36:33.948090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8c6ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d009240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d008f10>]}
+
+
+============================== 19:36:33.952804 | f011a2a4-5e53-4a63-9093-3d5956e9f3b0 ==============================
+[0m19:36:33.952804 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:36:33.953340 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'no_print': 'None', 'log_format': 'default', 'target_path': 'None', 'debug': 'False', 'invocation_command': 'dbt debug', 'introspect': 'True', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'write_json': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'printer_width': '80', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'use_colors': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'empty': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager'}
+[0m19:36:33.967705 [info ] [MainThread]: dbt version: 1.11.2
+[0m19:36:33.968223 [info ] [MainThread]: python version: 3.10.19
+[0m19:36:33.968591 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m19:36:33.969047 [info ] [MainThread]: os info: macOS-15.6.1-arm64-arm-64bit
+[0m19:36:34.028991 [info ] [MainThread]: Using profiles dir at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service
+[0m19:36:34.029479 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m19:36:34.029778 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m19:36:34.030372 [info ] [MainThread]: adapter type: keboola_snowflake
+[0m19:36:34.030658 [info ] [MainThread]: adapter version: 0.2.5
+[0m19:36:34.093530 [info ] [MainThread]: Configuration:
+[0m19:36:34.094042 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:36:34.094332 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:36:34.094601 [info ] [MainThread]: Required dependencies:
+[0m19:36:34.095041 [debug] [MainThread]: Executing "git --help"
+[0m19:36:34.115385 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:36:34.116265 [debug] [MainThread]: STDERR: "b''"
+[0m19:36:34.116654 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:36:34.116994 [info ] [MainThread]: Connection:
+[0m19:36:34.117348 [info ] [MainThread]:   base_url: https://query.north-europe.azure.keboola.com
+[0m19:36:34.117631 [info ] [MainThread]:   branch_id: 15940
+[0m19:36:34.117938 [info ] [MainThread]:   workspace_id: 154136499
+[0m19:36:34.118217 [info ] [MainThread]:   database: KEBOOLA_7167
+[0m19:36:34.118496 [info ] [MainThread]:   schema: WORKSPACE_154136503
+[0m19:36:34.118772 [info ] [MainThread]:   warehouse: KEBOOLA_PROD_SMALL
+[0m19:36:34.119047 [info ] [MainThread]:   role: None
+[0m19:36:34.119323 [info ] [MainThread]:   query_tag: None
+[0m19:36:34.119601 [info ] [MainThread]:   connect_retries: 1
+[0m19:36:34.119875 [info ] [MainThread]:   connect_timeout: None
+[0m19:36:34.120430 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m19:36:34.694391 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'debug'
+[0m19:36:34.769895 [debug] [MainThread]: Using keboola_snowflake connection "debug"
+[0m19:36:34.770319 [debug] [MainThread]: On debug: select 1 as id
+[0m19:36:34.770613 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:36:35.774760 [debug] [MainThread]: KeboolaSnowflake adapter: Keboola query id: None
+[0m19:36:35.775410 [debug] [MainThread]: KeboolaSnowflake adapter: Keboola error: Failed to get workspace credentials (status: 403) [query-service-peIjzvHxNVkDGeG]
+[0m19:36:35.775970 [debug] [MainThread]: On debug: Close
+[0m19:36:35.777676 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:36:35.778565 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:36:35.779376 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Failed to get workspace credentials (status: 403) [query-service-peIjzvHxNVkDGeG]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:36:35.784209 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.8913066, "process_in_blocks": "0", "process_kernel_time": 0.346055, "process_mem_max_rss": "118554624", "process_out_blocks": "0", "process_user_time": 0.996039}
+[0m19:36:35.785428 [debug] [MainThread]: Command `dbt debug` failed at 19:36:35.785264 after 1.89 seconds
+[0m19:36:35.786173 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:36:35.786861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8c6ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d64f7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d64fd60>]}
+[0m19:36:35.787556 [debug] [MainThread]: Flushing usage events
+[0m19:36:36.263494 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:38:43.532933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106506b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120209270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120208f40>]}
+
+
+============================== 19:38:43.536415 | e892936c-4cd6-4493-a3d4-56e046d2d9e0 ==============================
+[0m19:38:43.536415 [info ] [MainThread]: Running with dbt=1.11.2
+[0m19:38:43.536920 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'use_colors': 'True', 'write_json': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'quiet': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'log_format': 'default', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'invocation_command': 'dbt debug', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'use_experimental_parser': 'False'}
+[0m19:38:43.549915 [info ] [MainThread]: dbt version: 1.11.2
+[0m19:38:43.554079 [info ] [MainThread]: python version: 3.10.19
+[0m19:38:43.554804 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m19:38:43.555209 [info ] [MainThread]: os info: macOS-15.6.1-arm64-arm-64bit
+[0m19:38:43.609629 [info ] [MainThread]: Using profiles dir at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service
+[0m19:38:43.610126 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m19:38:43.610417 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m19:38:43.610983 [info ] [MainThread]: adapter type: keboola_snowflake
+[0m19:38:43.611327 [info ] [MainThread]: adapter version: 0.2.5
+[0m19:38:43.671744 [info ] [MainThread]: Configuration:
+[0m19:38:43.672306 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:38:43.672732 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:38:43.673073 [info ] [MainThread]: Required dependencies:
+[0m19:38:43.673525 [debug] [MainThread]: Executing "git --help"
+[0m19:38:43.700697 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:38:43.702582 [debug] [MainThread]: STDERR: "b''"
+[0m19:38:43.703012 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:38:43.704130 [info ] [MainThread]: Connection:
+[0m19:38:43.704695 [info ] [MainThread]:   base_url: https://query.north-europe.azure.keboola.com
+[0m19:38:43.704996 [info ] [MainThread]:   branch_id: 15940
+[0m19:38:43.705277 [info ] [MainThread]:   workspace_id: 154136499
+[0m19:38:43.705559 [info ] [MainThread]:   database: KEBOOLA_7167
+[0m19:38:43.705832 [info ] [MainThread]:   schema: WORKSPACE_154136503
+[0m19:38:43.706111 [info ] [MainThread]:   warehouse: KEBOOLA_PROD_SMALL
+[0m19:38:43.706379 [info ] [MainThread]:   role: None
+[0m19:38:43.706644 [info ] [MainThread]:   query_tag: None
+[0m19:38:43.706915 [info ] [MainThread]:   connect_retries: 1
+[0m19:38:43.707201 [info ] [MainThread]:   connect_timeout: None
+[0m19:38:43.707870 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m19:38:43.795012 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'debug'
+[0m19:38:43.870847 [debug] [MainThread]: Using keboola_snowflake connection "debug"
+[0m19:38:43.871353 [debug] [MainThread]: On debug: select 1 as id
+[0m19:38:43.871961 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:38:44.824196 [debug] [MainThread]: KeboolaSnowflake adapter: Keboola query id: None
+[0m19:38:44.825523 [debug] [MainThread]: KeboolaSnowflake adapter: Keboola error: Failed to get workspace credentials (status: 403) [query-service-8VRjYExJpyIYbAB]
+[0m19:38:44.826861 [debug] [MainThread]: On debug: Close
+[0m19:38:44.828688 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:38:44.829657 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:38:44.830504 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Failed to get workspace credentials (status: 403) [query-service-8VRjYExJpyIYbAB]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:38:44.835924 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.3491727, "process_in_blocks": "0", "process_kernel_time": 0.314181, "process_mem_max_rss": "121896960", "process_out_blocks": "0", "process_user_time": 0.943106}
+[0m19:38:44.837273 [debug] [MainThread]: Command `dbt debug` failed at 19:38:44.837098 after 1.35 seconds
+[0m19:38:44.838053 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:38:44.838828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106506b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a4f880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a4fdf0>]}
+[0m19:38:44.839559 [debug] [MainThread]: Flushing usage events
+[0m19:38:45.463786 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:33:46.867142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094d24f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa00d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa00100>]}
+
+
+============================== 23:33:46.870978 | 5b089237-5eb6-45c5-a90e-52ce803079f5 ==============================
+[0m23:33:46.870978 [info ] [MainThread]: Running with dbt=1.5.11
+[0m23:33:46.871568 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:33:46.871990 [info ] [MainThread]: dbt version: 1.5.11
+[0m23:33:46.872385 [info ] [MainThread]: python version: 3.9.22
+[0m23:33:46.873029 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-snowflake/1.5.7/libexec/bin/python
+[0m23:33:46.873453 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m23:33:46.873834 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m23:33:46.874216 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m23:33:46.874591 [info ] [MainThread]: Configuration:
+[0m23:33:46.880907 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.keboola_snowflake'
+[0m23:33:46.881723 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m23:33:46.901404 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:33:46.901981 [info ] [MainThread]: Required dependencies:
+[0m23:33:46.902648 [debug] [MainThread]: Executing "git --help"
+[0m23:33:46.916158 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:33:46.916937 [debug] [MainThread]: STDERR: "b''"
+[0m23:33:46.917250 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:33:46.917664 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:33:46.918042 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "keboola_northwind", target "dev" invalid: Runtime Error
+    Could not find adapter type keboola_snowflake!
+
+
+[0m23:33:46.918801 [debug] [MainThread]: Command `dbt debug` failed at 23:33:46.918716 after 0.07 seconds
+[0m23:33:46.919201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094d24f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa291c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa6aa00>]}
+[0m23:33:46.919610 [debug] [MainThread]: Flushing usage events
+[0m23:35:47.192642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10613e460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086efb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086ef0d0>]}
+
+
+============================== 23:35:47.196509 | 9ab1adb2-0ae8-4072-b7bc-9fa79fe86f1d ==============================
+[0m23:35:47.196509 [info ] [MainThread]: Running with dbt=1.5.11
+[0m23:35:47.197082 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:35:47.197508 [info ] [MainThread]: dbt version: 1.5.11
+[0m23:35:47.197893 [info ] [MainThread]: python version: 3.9.22
+[0m23:35:47.198267 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-snowflake/1.5.7/libexec/bin/python
+[0m23:35:47.198634 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m23:35:47.198989 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m23:35:47.199354 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m23:35:47.199712 [info ] [MainThread]: Configuration:
+[0m23:35:47.206005 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.keboola_snowflake'
+[0m23:35:47.206833 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m23:35:47.226926 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:35:47.227599 [info ] [MainThread]: Required dependencies:
+[0m23:35:47.228329 [debug] [MainThread]: Executing "git --help"
+[0m23:35:47.246183 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:35:47.246916 [debug] [MainThread]: STDERR: "b''"
+[0m23:35:47.247210 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:35:47.247611 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:35:47.247986 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "keboola_northwind", target "dev" invalid: Runtime Error
+    Could not find adapter type keboola_snowflake!
+
+
+[0m23:35:47.248729 [debug] [MainThread]: Command `dbt debug` failed at 23:35:47.248631 after 0.08 seconds
+[0m23:35:47.249106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10613e460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1003a93d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087763a0>]}
+[0m23:35:47.249491 [debug] [MainThread]: Flushing usage events
+[0m23:37:46.627471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10802a460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5dbb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5db0d0>]}
+
+
+============================== 23:37:46.631663 | a0abac27-52ee-4c96-a801-d084de6b98d2 ==============================
+[0m23:37:46.631663 [info ] [MainThread]: Running with dbt=1.5.11
+[0m23:37:46.632300 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:37:46.632772 [info ] [MainThread]: dbt version: 1.5.11
+[0m23:37:46.633170 [info ] [MainThread]: python version: 3.9.22
+[0m23:37:46.633538 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-snowflake/1.5.7/libexec/bin/python
+[0m23:37:46.633905 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m23:37:46.634263 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m23:37:46.634640 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m23:37:46.635004 [info ] [MainThread]: Configuration:
+[0m23:37:46.641293 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.keboola_snowflake'
+[0m23:37:46.642099 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m23:37:46.661285 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:37:46.661885 [info ] [MainThread]: Required dependencies:
+[0m23:37:46.662543 [debug] [MainThread]: Executing "git --help"
+[0m23:37:46.673571 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:37:46.674432 [debug] [MainThread]: STDERR: "b''"
+[0m23:37:46.674804 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:37:46.675306 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:37:46.675714 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "keboola_northwind", target "dev" invalid: Runtime Error
+    Could not find adapter type keboola_snowflake!
+
+
+[0m23:37:46.676538 [debug] [MainThread]: Command `dbt debug` failed at 23:37:46.676443 after 0.07 seconds
+[0m23:37:46.676966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10802a460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102235730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a663940>]}
+[0m23:37:46.677391 [debug] [MainThread]: Flushing usage events
+[0m23:38:53.025959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d2ebc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114404f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114404e50>]}
+
+
+============================== 23:38:53.030743 | 801c4d9d-0067-4da8-8459-67e9489f03b9 ==============================
+[0m23:38:53.030743 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:38:53.031493 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'write_json': 'True', 'printer_width': '80', 'quiet': 'False', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'warn_error': 'None', 'no_print': 'None', 'introspect': 'True', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'log_cache_events': 'False', 'partial_parse': 'True', 'debug': 'False', 'invocation_command': 'dbt ', 'static_parser': 'True', 'fail_fast': 'False'}
+[0m23:38:53.035387 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `materialized` found at
+`keboola_northwind.warehouse.materialized` in file `/Users/martin/Library/Mobile
+Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.
+yml`. Hierarchical config values without a '+' prefix are deprecated in
+dbt_project.yml.
+[0m23:38:53.036006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '801c4d9d-0067-4da8-8459-67e9489f03b9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1144059f0>]}
+[0m23:38:54.234179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b12400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0419d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b041070>]}
+
+
+============================== 23:38:54.237757 | db6d7a79-5ff2-45ef-ad75-dacaa395220c ==============================
+[0m23:38:54.237757 [info ] [MainThread]: Running with dbt=1.5.11
+[0m23:38:54.238314 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:38:54.238772 [info ] [MainThread]: dbt version: 1.5.11
+[0m23:38:54.239151 [info ] [MainThread]: python version: 3.9.22
+[0m23:38:54.239514 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-snowflake/1.5.7/libexec/bin/python
+[0m23:38:54.239869 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m23:38:54.240218 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m23:38:54.240577 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m23:38:54.240927 [info ] [MainThread]: Configuration:
+[0m23:38:54.247869 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'KEBOOLA_NORTHWIND_BASE_URL'
+[0m23:38:54.249437 [debug] [MainThread]: Command `dbt debug` failed at 23:38:54.249293 after 0.03 seconds
+[0m23:38:54.249824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b12400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0c4ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0c4c70>]}
+[0m23:38:54.250174 [debug] [MainThread]: Flushing usage events
+[0m23:38:57.011425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '801c4d9d-0067-4da8-8459-67e9489f03b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11451f820>]}
+[0m23:38:57.032285 [debug] [MainThread]: Set downloads directory='/var/folders/cx/dyw17k8n62l401jn8161bnfr0000gn/T/dbt-downloads-canrcyzw'
+[0m23:38:57.032869 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m23:38:57.238509 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m23:38:57.240386 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m23:38:57.334867 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m23:38:57.340862 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json
+[0m23:38:57.524265 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json 200
+[0m23:38:57.527086 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m23:38:57.612259 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m23:38:57.614270 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_expectations` package is deprecated in favor of
+`metaplane/dbt_expectations`. Please update your `packages.yml` configuration to
+use `metaplane/dbt_expectations` instead.
+[0m23:38:57.614830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '801c4d9d-0067-4da8-8459-67e9489f03b9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11068c490>]}
+[0m23:38:57.616976 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m23:38:57.743126 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m23:38:57.755966 [info ] [MainThread]: Updating lock file in file path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/package-lock.yml
+[0m23:38:57.759359 [debug] [MainThread]: Set downloads directory='/var/folders/cx/dyw17k8n62l401jn8161bnfr0000gn/T/dbt-downloads-r847mtpu'
+[0m23:38:57.766054 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m23:38:58.242414 [info ] [MainThread]: Installed from version 1.1.1
+[0m23:38:58.242969 [info ] [MainThread]: Updated version available: 1.3.3
+[0m23:38:58.243410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '801c4d9d-0067-4da8-8459-67e9489f03b9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11451c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114798070>]}
+[0m23:38:58.243856 [info ] [MainThread]: Installing data-mie/dbt_profiler
+[0m23:38:58.558522 [info ] [MainThread]: Installed from version 0.8.1
+[0m23:38:58.559088 [info ] [MainThread]: Updated version available: 0.8.4
+[0m23:38:58.559519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '801c4d9d-0067-4da8-8459-67e9489f03b9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11451c2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11479a3e0>]}
+[0m23:38:58.559984 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m23:38:59.308967 [info ] [MainThread]: Installed from version 0.10.1
+[0m23:38:59.309506 [info ] [MainThread]: Updated version available: 0.10.4
+[0m23:38:59.310030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '801c4d9d-0067-4da8-8459-67e9489f03b9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11479baf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114798b80>]}
+[0m23:38:59.310525 [info ] [MainThread]: Installing calogica/dbt_date
+[0m23:38:59.602874 [info ] [MainThread]: Installed from version 0.10.1
+[0m23:38:59.603482 [info ] [MainThread]: Up to date!
+[0m23:38:59.604037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '801c4d9d-0067-4da8-8459-67e9489f03b9', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11479a4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1147985e0>]}
+[0m23:38:59.604476 [info ] [MainThread]: 
+[0m23:38:59.604859 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'data-mie/dbt_profiler', 'calogica/dbt_expectations']                 
+Update your versions in packages.yml, then run dbt deps
+[0m23:38:59.607667 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 3 occurrences
+- PackageRedirectDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m23:38:59.619068 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 6.6538177, "process_in_blocks": "0", "process_kernel_time": 0.46527, "process_mem_max_rss": "126517248", "process_out_blocks": "0", "process_user_time": 1.450045}
+[0m23:38:59.619656 [debug] [MainThread]: Command `cli deps` succeeded at 23:38:59.619578 after 6.65 seconds
+[0m23:38:59.620067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d2ebc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11451f6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11458b4f0>]}
+[0m23:38:59.620479 [debug] [MainThread]: Flushing usage events
+[0m23:39:00.056827 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:39:18.217592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a77e3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd22b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd22220>]}
+
+
+============================== 23:39:18.221098 | 201eb1f1-cad2-42a4-aded-2d5ae8af5878 ==============================
+[0m23:39:18.221098 [info ] [MainThread]: Running with dbt=1.5.11
+[0m23:39:18.221680 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m23:39:18.222150 [info ] [MainThread]: dbt version: 1.5.11
+[0m23:39:18.222541 [info ] [MainThread]: python version: 3.9.22
+[0m23:39:18.222906 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-snowflake/1.5.7/libexec/bin/python
+[0m23:39:18.223269 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m23:39:18.223625 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m23:39:18.223987 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m23:39:18.224351 [info ] [MainThread]: Configuration:
+[0m23:39:18.230875 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.keboola_snowflake'
+[0m23:39:18.231714 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m23:39:18.252376 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:39:18.252975 [info ] [MainThread]: Required dependencies:
+[0m23:39:18.253654 [debug] [MainThread]: Executing "git --help"
+[0m23:39:18.266514 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:39:18.267322 [debug] [MainThread]: STDERR: "b''"
+[0m23:39:18.267631 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:39:18.268192 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:39:18.268641 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "keboola_northwind", target "dev" invalid: Runtime Error
+    Could not find adapter type keboola_snowflake!
+
+
+[0m23:39:18.269425 [debug] [MainThread]: Command `dbt debug` failed at 23:39:18.269330 after 0.07 seconds
+[0m23:39:18.269831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a77e3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd22fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cdaf040>]}
+[0m23:39:18.270249 [debug] [MainThread]: Flushing usage events
+[0m23:41:06.879817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1206d4370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12302f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12302efb0>]}
+
+
+============================== 23:41:06.884273 | 8109019b-3175-4337-ab42-c694dfe036ee ==============================
+[0m23:41:06.884273 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:41:06.884826 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'use_colors': 'True', 'quiet': 'False', 'fail_fast': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'write_json': 'True', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'version_check': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'partial_parse': 'True', 'debug': 'False'}
+[0m23:41:06.899013 [info ] [MainThread]: dbt version: 1.11.2
+[0m23:41:06.899551 [info ] [MainThread]: python version: 3.10.19
+[0m23:41:06.899912 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m23:41:06.903535 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m23:41:06.959926 [info ] [MainThread]: Using profiles dir at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service
+[0m23:41:06.960457 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m23:41:06.960836 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m23:41:06.961571 [info ] [MainThread]: adapter type: keboola_snowflake
+[0m23:41:06.962074 [info ] [MainThread]: adapter version: 0.2.5
+[0m23:41:07.041832 [info ] [MainThread]: Configuration:
+[0m23:41:07.042445 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:41:07.042816 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:41:07.043172 [info ] [MainThread]: Required dependencies:
+[0m23:41:07.043680 [debug] [MainThread]: Executing "git --help"
+[0m23:41:07.062545 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:41:07.063494 [debug] [MainThread]: STDERR: "b''"
+[0m23:41:07.064035 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:41:07.064677 [info ] [MainThread]: Connection:
+[0m23:41:07.065101 [info ] [MainThread]:   base_url: https://query.us-east4.gcp.keboola.com
+[0m23:41:07.065452 [info ] [MainThread]:   branch_id: 1752
+[0m23:41:07.065790 [info ] [MainThread]:   workspace_id: 13376035
+[0m23:41:07.066112 [info ] [MainThread]:   database: KBC_USE4_834
+[0m23:41:07.066436 [info ] [MainThread]:   schema: WORKSPACE_21534344
+[0m23:41:07.066756 [info ] [MainThread]:   warehouse: KEBOOLA_SMALL
+[0m23:41:07.067073 [info ] [MainThread]:   role: None
+[0m23:41:07.067391 [info ] [MainThread]:   query_tag: None
+[0m23:41:07.067704 [info ] [MainThread]:   connect_retries: 1
+[0m23:41:07.068034 [info ] [MainThread]:   connect_timeout: None
+[0m23:41:07.068624 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m23:41:07.169885 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'debug'
+[0m23:41:07.249093 [debug] [MainThread]: Using keboola_snowflake connection "debug"
+[0m23:41:07.249583 [debug] [MainThread]: On debug: select 1 as id
+[0m23:41:07.249927 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:41:08.251569 [debug] [MainThread]: KeboolaSnowflake adapter: Error running SQL: select 1 as id
+[0m23:41:08.254050 [debug] [MainThread]: KeboolaSnowflake adapter: Rolling back transaction.
+[0m23:41:08.255591 [debug] [MainThread]: On debug: Close
+[0m23:41:08.257078 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m23:41:08.258401 [info ] [MainThread]: [31m1 check failed:[0m
+[0m23:41:08.259484 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  Invalid isoformat string: '2026-01-06T07:41:08.08342+00:00'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:41:08.265727 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.4389544, "process_in_blocks": "0", "process_kernel_time": 0.317349, "process_mem_max_rss": "126156800", "process_out_blocks": "0", "process_user_time": 1.168953}
+[0m23:41:08.266617 [debug] [MainThread]: Command `dbt debug` failed at 23:41:08.266494 after 1.44 seconds
+[0m23:41:08.267310 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:41:08.267978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1206d4370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062cd6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1231bda80>]}
+[0m23:41:08.268740 [debug] [MainThread]: Flushing usage events
+[0m23:41:08.817152 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:09:59.133171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105adc460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2af80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2ad70>]}
+
+
+============================== 10:09:59.140598 | fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1 ==============================
+[0m10:09:59.140598 [info ] [MainThread]: Running with dbt=1.11.2
+[0m10:09:59.141620 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'no_print': 'None', 'debug': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'empty': 'None', 'static_parser': 'True', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'log_format': 'default', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt ', 'version_check': 'True', 'introspect': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'printer_width': '80', 'target_path': 'None', 'use_colors': 'True', 'write_json': 'True', 'cache_selected_only': 'False'}
+[0m10:09:59.144894 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `materialized` found at
+`keboola_northwind.warehouse.materialized` in file `/Users/martin/Library/Mobile
+Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.
+yml`. Hierarchical config values without a '+' prefix are deprecated in
+dbt_project.yml.
+[0m10:09:59.145916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2a5f0>]}
+[0m10:09:59.493932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2aa40>]}
+[0m10:09:59.760616 [debug] [MainThread]: Set downloads directory='/var/folders/cx/dyw17k8n62l401jn8161bnfr0000gn/T/dbt-downloads-cnb_0e83'
+[0m10:09:59.761657 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m10:10:00.038317 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m10:10:00.044556 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m10:10:00.136938 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m10:10:00.157666 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json
+[0m10:10:00.509489 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json 200
+[0m10:10:00.511783 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m10:10:00.609133 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m10:10:00.610793 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_expectations` package is deprecated in favor of
+`metaplane/dbt_expectations`. Please update your `packages.yml` configuration to
+use `metaplane/dbt_expectations` instead.
+[0m10:10:00.611356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107051a50>]}
+[0m10:10:00.613445 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m10:10:00.707807 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m10:10:00.715345 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m10:10:01.608789 [info ] [MainThread]: Installed from version 1.1.1
+[0m10:10:01.609779 [info ] [MainThread]: Updated version available: 1.3.3
+[0m10:10:01.614080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b6c400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10720b9a0>]}
+[0m10:10:01.615423 [info ] [MainThread]: Installing data-mie/dbt_profiler
+[0m10:10:02.044660 [info ] [MainThread]: Installed from version 0.8.1
+[0m10:10:02.045342 [info ] [MainThread]: Updated version available: 0.8.4
+[0m10:10:02.045718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b6c400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072081c0>]}
+[0m10:10:02.046303 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m10:10:02.887311 [info ] [MainThread]: Installed from version 0.10.1
+[0m10:10:02.888031 [info ] [MainThread]: Updated version available: 0.10.4
+[0m10:10:02.888484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10720af50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10720ae30>]}
+[0m10:10:02.888891 [info ] [MainThread]: Installing calogica/dbt_date
+[0m10:10:03.272205 [info ] [MainThread]: Installed from version 0.10.1
+[0m10:10:03.272848 [info ] [MainThread]: Up to date!
+[0m10:10:03.273278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'fc69f38a-3e2f-4f8e-9559-1cfacdc77ab1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107209210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10720af20>]}
+[0m10:10:03.273699 [info ] [MainThread]: 
+[0m10:10:03.274087 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'data-mie/dbt_profiler', 'calogica/dbt_expectations']                 
+Update your versions in packages.yml, then run dbt deps
+[0m10:10:03.279006 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 3 occurrences
+- PackageRedirectDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:10:03.308621 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 4.3046594, "process_in_blocks": "0", "process_kernel_time": 0.710808, "process_mem_max_rss": "106774528", "process_out_blocks": "0", "process_user_time": 1.554912}
+[0m10:10:03.309431 [debug] [MainThread]: Command `cli deps` succeeded at 10:10:03.309319 after 4.31 seconds
+[0m10:10:03.310010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105adc460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cdba00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ff6110>]}
+[0m10:10:03.310372 [debug] [MainThread]: Flushing usage events
+[0m10:10:03.828929 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:12:29.773851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b9c340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ac3130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ac2fe0>]}
+
+
+============================== 10:12:29.779865 | 4f4d22fe-6cb8-46f9-9fb6-7d4d1dfe1597 ==============================
+[0m10:12:29.779865 [info ] [MainThread]: Running with dbt=1.11.2
+[0m10:12:29.780403 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'introspect': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'empty': 'None', 'invocation_command': 'dbt debug', 'debug': 'False', 'warn_error': 'None', 'write_json': 'True', 'quiet': 'False', 'version_check': 'True', 'log_format': 'default', 'printer_width': '80', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'cache_selected_only': 'False'}
+[0m10:12:29.795323 [info ] [MainThread]: dbt version: 1.11.2
+[0m10:12:29.797183 [info ] [MainThread]: python version: 3.10.19
+[0m10:12:29.797701 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m10:12:29.797987 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m10:12:29.847125 [info ] [MainThread]: Using profiles dir at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service
+[0m10:12:29.847643 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m10:12:29.847965 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m10:12:29.848568 [info ] [MainThread]: adapter type: keboola_snowflake
+[0m10:12:29.848858 [info ] [MainThread]: adapter version: 0.2.5
+[0m10:12:29.913041 [info ] [MainThread]: Configuration:
+[0m10:12:29.913531 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:12:29.913818 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:12:29.914090 [info ] [MainThread]: Required dependencies:
+[0m10:12:29.914622 [debug] [MainThread]: Executing "git --help"
+[0m10:12:29.926277 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:12:29.926947 [debug] [MainThread]: STDERR: "b''"
+[0m10:12:29.927274 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:12:29.927598 [info ] [MainThread]: Connection:
+[0m10:12:29.927938 [info ] [MainThread]:   base_url: https://query.us-east4.gcp.keboola.com
+[0m10:12:29.928212 [info ] [MainThread]:   branch_id: 1752
+[0m10:12:29.928479 [info ] [MainThread]:   workspace_id: 13376035
+[0m10:12:29.928924 [info ] [MainThread]:   database: KBC_USE4_834
+[0m10:12:29.929243 [info ] [MainThread]:   schema: WORKSPACE_21534344
+[0m10:12:29.930004 [info ] [MainThread]:   warehouse: KEBOOLA_SMALL
+[0m10:12:29.930464 [info ] [MainThread]:   role: None
+[0m10:12:29.931207 [info ] [MainThread]:   query_tag: None
+[0m10:12:29.931541 [info ] [MainThread]:   connect_retries: 1
+[0m10:12:29.931992 [info ] [MainThread]:   connect_timeout: None
+[0m10:12:29.932640 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m10:12:30.025359 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'debug'
+[0m10:12:30.106031 [debug] [MainThread]: Using keboola_snowflake connection "debug"
+[0m10:12:30.106464 [debug] [MainThread]: On debug: select 1 as id
+[0m10:12:30.106740 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:12:32.621679 [debug] [MainThread]: SQL status: completed 1 in 2.515 seconds
+[0m10:12:32.624240 [debug] [MainThread]: On debug: Close
+[0m10:12:32.624845 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:12:32.625187 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:12:32.627784 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.9034646, "process_in_blocks": "0", "process_kernel_time": 0.291927, "process_mem_max_rss": "126287872", "process_out_blocks": "0", "process_user_time": 0.946239}
+[0m10:12:32.628223 [debug] [MainThread]: Command `dbt debug` succeeded at 10:12:32.628165 after 2.90 seconds
+[0m10:12:32.628528 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:12:32.628838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b9c340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104313910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ac3f40>]}
+[0m10:12:32.629184 [debug] [MainThread]: Flushing usage events
+[0m10:12:33.115631 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:16:07.490895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104408340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105533160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105533010>]}
+
+
+============================== 10:16:07.495180 | d7e1b338-e966-488d-8f37-398731d41694 ==============================
+[0m10:16:07.495180 [info ] [MainThread]: Running with dbt=1.11.2
+[0m10:16:07.495725 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'introspect': 'True', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'empty': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'static_parser': 'True', 'partial_parse': 'True', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'debug': 'False', 'write_json': 'True'}
+[0m10:16:07.628535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7e1b338-e966-488d-8f37-398731d41694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057676a0>]}
+[0m10:16:07.665935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd7e1b338-e966-488d-8f37-398731d41694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105295d50>]}
+[0m10:16:07.667554 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m10:16:07.771944 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m10:16:07.976056 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:16:07.976470 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:16:07.976737 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:16:08.009242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd7e1b338-e966-488d-8f37-398731d41694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f68130>]}
+[0m10:16:08.082462 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/manifest.json
+[0m10:16:08.084777 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/semantic_manifest.json
+[0m10:16:08.102258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd7e1b338-e966-488d-8f37-398731d41694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f02290>]}
+[0m10:16:08.102686 [info ] [MainThread]: Found 12 models, 47 data tests, 13 sources, 957 macros, 4 groups
+[0m10:16:08.103000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7e1b338-e966-488d-8f37-398731d41694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f02bf0>]}
+[0m10:16:08.104489 [info ] [MainThread]: 
+[0m10:16:08.104799 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:16:08.105070 [info ] [MainThread]: 
+[0m10:16:08.105456 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'master'
+[0m10:16:08.108440 [debug] [ThreadPool]: Acquiring new keboola_snowflake connection 'list_KBC_USE4_834'
+[0m10:16:08.191248 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834"
+[0m10:16:08.191669 [debug] [ThreadPool]: On list_KBC_USE4_834: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834"} */
+show terse schemas in database KBC_USE4_834
+    limit 10000
+[0m10:16:08.191957 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:16:11.087631 [debug] [ThreadPool]: SQL status: completed 11 in 2.896 seconds
+[0m10:16:11.091705 [debug] [ThreadPool]: On list_KBC_USE4_834: Close
+[0m10:16:11.095943 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KBC_USE4_834, now list_KBC_USE4_834_WORKSPACE_21534344)
+[0m10:16:11.113672 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834_WORKSPACE_21534344"
+[0m10:16:11.114391 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834_WORKSPACE_21534344"} */
+show objects in KBC_USE4_834.WORKSPACE_21534344
+    limit 10000
+[0m10:16:11.114903 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:16:11.941032 [debug] [ThreadPool]: KeboolaSnowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834_WORKSPACE_21534344"} */
+show objects in KBC_USE4_834.WORKSPACE_21534344
+    limit 10000
+[0m10:16:11.944358 [debug] [ThreadPool]: KeboolaSnowflake adapter: Rolling back transaction.
+[0m10:16:11.946049 [debug] [ThreadPool]: KeboolaSnowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m10:16:11.947063 [debug] [ThreadPool]: KeboolaSnowflake adapter: Rolling back transaction.
+[0m10:16:11.947971 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: Close
+[0m10:16:11.949847 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:16:11.950727 [debug] [MainThread]: Connection 'list_KBC_USE4_834_WORKSPACE_21534344' was properly closed.
+[0m10:16:11.951470 [info ] [MainThread]: 
+[0m10:16:11.952669 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 3.85 seconds (3.85s).
+[0m10:16:11.954002 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Invalid isoformat string: '2026-01-09T18:16:11.85563+00:00'
+[0m10:16:11.958884 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.520595, "process_in_blocks": "0", "process_kernel_time": 0.334842, "process_mem_max_rss": "136036352", "process_out_blocks": "0", "process_user_time": 1.290658}
+[0m10:16:11.959829 [debug] [MainThread]: Command `dbt run` failed at 10:16:11.959714 after 4.52 seconds
+[0m10:16:11.960531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104408340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f03e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10666df30>]}
+[0m10:16:11.961226 [debug] [MainThread]: Flushing usage events
+[0m10:16:12.465501 [debug] [MainThread]: An error was encountered while trying to flush usage events

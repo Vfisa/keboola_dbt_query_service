@@ -1,0 +1,5 @@
+profiles.yml
+.conda
+.env
+.env.local
+.env.*.local

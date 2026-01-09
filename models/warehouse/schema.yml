@@ -1,0 +1,167 @@
+version: 2
+
+models:
+    - name: dim_customer
+      config:
+        group: mart
+      tags:
+        - marts
+      docs:
+        node_color: "orange"
+      description: "Dimensional model with customer details"
+      meta:
+        owner: fisa@keboola.com
+      columns:         
+          - name: "CUSTOMER_ID"
+            description: ID as a primary key
+            tests:
+                - not_null
+                - unique
+            constraints:
+                - type: not_null
+          - name: "COMPANY_NAME"
+            description: Company Name
+          - name: "CONTACT_NAME"
+            description: Contact Name
+          - name: "CONTACT_TITLE"
+            description: Contact title
+          - name: "ADDRESS"
+            description: Address
+          - name: "CITY"
+            description: City
+          - name: "REGION"
+            description: Region
+          - name: "POSTAL_CODE"
+            description: Postal Code
+          - name: "COUNTRY"
+            description: Country
+          - name: "PHONE"
+            description: Phone
+          - name: "FAX"
+            description: Fax
+          - name: "INSERTION_TIMESTAMP"
+            description: Updated at
+
+    - name: dim_employee
+      config:
+        group: mart
+      description: "Dimensional model with employee details"
+      tags:
+        - marts
+      docs:
+        node_color: "orange"
+      meta:
+        owner: fisa@keboola.com
+      columns:          
+          - name: "EMPLOYEE_ID"
+            description: ID as a primary key
+            tests:
+                - not_null
+                - unique
+            constraints:
+                - type: not_null
+          - name: "LAST_NAME"
+            description: Last Name
+          - name: "FIRST_NAME"
+            description: First Name
+          - name: "TITLE"
+            description: Employee title
+          - name: "BIRTH_DATE"
+            description: Birthdate
+          - name: "HIRE_DATE"
+            description: Hire Date
+          - name: "ADDRESS"
+            description: Address
+          - name: "CITY"
+            description: City
+          - name: "REGION"
+            description: Region
+          - name: "POSTAL_CODE"
+            description: Postal Code
+          - name: "COUNTRY"
+            description: Country
+          - name: "HOME_PHONE"
+            description: Phone
+          - name: "EXTENSION"
+            description: Extension
+          - name: "NOTES"
+            description: Notes
+          - name: "EXTENSION"
+            description: Extension
+          - name: "REPORTS_TO"
+            description: Reports to
+          - name: "INSERTION_TIMESTAMP"
+            description: Updated at
+
+    - name: dim_product
+      config:
+        group: mart
+      description: "Dimensional model with product details"
+      tags:
+        - marts
+      docs:
+        node_color: "orange"
+      meta:
+        owner: fisa@keboola.com
+      columns:             
+          - name: "PRODUCT_ID"
+            description: ID as a primary key
+            tests:
+                - not_null
+                - unique
+            constraints:
+                - type: not_null
+          - name: "PRODUCT_NAME"
+            description: Product name
+          - name: "CATEGORY_ID"
+            description: Category ID
+          - name: "SUPPLIER_COMPANY"
+            description: Supplier Name
+          - name: "UNIT_PRICE"
+            description: Unit Price
+          - name: "UNITS_ON_ORDER"
+            description: Units on order
+          - name: "UNITS_IN_STOCK"
+            description: Units in stock
+          - name: "REORDER_LEVEL"
+            description: Reorder Level
+          - name: "DISCONTINUED"
+            description: Discontinued Flag
+          - name: "INSERTION_TIMESTAMP"
+            description: Updated at
+
+    - name: fact_sales
+      config:
+        group: finance
+      description: "Fact table with sales data"
+      tags:
+        - marts
+      docs:
+        node_color: "orange"
+      meta:
+        owner: fisa@keboola.com
+      columns:             
+          - name: "ORDER_ID"
+            description: ORDER ID as a foreign key
+          - name: "PRODUCT_ID"
+            description: PRODUCT ID as a foreign key
+          - name: "CUSTOMER_ID"
+            description: CUSTOMER ID as a foreign key
+          - name: "EMPLOYEE_ID"
+            description: EMPLOYEE ID as a foreign key
+          - name: "SHIPPER_ID"
+            description: SHIPPER ID as a foreign key
+          - name: "QUANTITY"
+            description: Total Quantity
+          - name: "UNIT_PRICE"
+            description: Unit Price
+          - name: "DISCOUNT"
+            description: Discount
+          - name: "ORDER_DATE"
+            description: Order Date
+          - name: "SHIPPED_DATE"
+            description: Shipped Date
+          - name: "REQUIRED_DATE"
+            description: Required Date
+          - name: "INSERTION_TIMESTAMP"
+            description: Updated at

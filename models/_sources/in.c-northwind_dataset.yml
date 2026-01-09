@@ -1,0 +1,141 @@
+version: 2
+sources:
+    - name: in.c-northwind_dataset
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_DATABASE") }}'
+      schema: in.c-northwind_dataset
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: CATEGORIES
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"CATEGORY_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: CUSTOMERS
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"CUSTOMER_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: CUSTOMER_DEMOGRAPHICS
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"CUSTOMER_TYPE_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: EMPLOYEES
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"EMPLOYEE_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: EMPLOYEE_TERRITORIES
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"EMPLOYEE_ID"'
+              tests:
+                - unique
+                - not_null
+            - name: '"TERRITORY_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: ORDERS
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"ORDER_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: ORDER_DETAILS
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []
+        - name: PRODUCTS
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"PRODUCT_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: REGION
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"REGION_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: SHIPPERS
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"SHIPPER_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: SUPPLIERS
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"SUPPLIER_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: TERRITORIES
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"TERRITORY_ID"'
+              tests:
+                - unique
+                - not_null
+        - name: US_STATES
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"STATE_ID"'
+              tests:
+                - unique
+                - not_null
