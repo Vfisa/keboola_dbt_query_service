@@ -5,7 +5,7 @@ sources:
         warn_after:
             count: 1
             period: day
-      database: '{{ env_var("DBT_KBC_KEBOOLA_NORTHWIND_DATABASE") }}'
+      database: '{{ env_var("KEBOOLA_NORTHWIND_DATABASE") }}'
       schema: in.c-northwind_dataset
       loaded_at_field: '"_timestamp"'
       tables:

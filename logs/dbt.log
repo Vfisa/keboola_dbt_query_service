@@ -650,3 +650,1394 @@ Runtime Error
 [0m10:16:11.960531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104408340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f03e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10666df30>]}
 [0m10:16:11.961226 [debug] [MainThread]: Flushing usage events
 [0m10:16:12.465501 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:26:09.221023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104798370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056baf80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056bad70>]}
+
+
+============================== 14:26:09.225087 | 9e28852b-6fc4-4e79-b890-d484e81860ff ==============================
+[0m14:26:09.225087 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:26:09.225673 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'partial_parse': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'debug': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt ', 'version_check': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'introspect': 'True', 'no_print': 'None', 'static_parser': 'True', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'use_colors': 'True', 'printer_width': '80', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None'}
+[0m14:26:09.228109 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `materialized` found at
+`keboola_northwind.staging.materialized` in file `/Users/martin/Library/Mobile D
+ocuments/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.y
+ml`. Hierarchical config values without a '+' prefix are deprecated in
+dbt_project.yml.
+[0m14:26:09.228606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9e28852b-6fc4-4e79-b890-d484e81860ff', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056ba5f0>]}
+[0m14:26:09.323493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9e28852b-6fc4-4e79-b890-d484e81860ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056baa40>]}
+[0m14:26:09.404095 [debug] [MainThread]: Set downloads directory='/var/folders/cx/dyw17k8n62l401jn8161bnfr0000gn/T/dbt-downloads-1m7nfy_t'
+[0m14:26:09.405767 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m14:26:09.612607 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m14:26:09.614479 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m14:26:09.809454 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m14:26:09.813335 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json
+[0m14:26:09.922467 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json 200
+[0m14:26:09.925590 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m14:26:10.041731 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m14:26:10.043823 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_expectations` package is deprecated in favor of
+`metaplane/dbt_expectations`. Please update your `packages.yml` configuration to
+use `metaplane/dbt_expectations` instead.
+[0m14:26:10.044322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9e28852b-6fc4-4e79-b890-d484e81860ff', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10589f8e0>]}
+[0m14:26:10.047070 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m14:26:10.140418 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m14:26:10.143916 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m14:26:10.599931 [info ] [MainThread]: Installed from version 1.1.1
+[0m14:26:10.600353 [info ] [MainThread]: Updated version available: 1.3.3
+[0m14:26:10.600742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '9e28852b-6fc4-4e79-b890-d484e81860ff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10484feb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10599b9a0>]}
+[0m14:26:10.601117 [info ] [MainThread]: Installing data-mie/dbt_profiler
+[0m14:26:10.886717 [info ] [MainThread]: Installed from version 0.8.1
+[0m14:26:10.887826 [info ] [MainThread]: Updated version available: 0.8.4
+[0m14:26:10.888499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '9e28852b-6fc4-4e79-b890-d484e81860ff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10484feb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059981c0>]}
+[0m14:26:10.888943 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m14:26:11.868982 [info ] [MainThread]: Installed from version 0.10.1
+[0m14:26:11.869472 [info ] [MainThread]: Updated version available: 0.10.4
+[0m14:26:11.870016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '9e28852b-6fc4-4e79-b890-d484e81860ff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10599af50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10599ae30>]}
+[0m14:26:11.870457 [info ] [MainThread]: Installing calogica/dbt_date
+[0m14:26:12.107900 [info ] [MainThread]: Installed from version 0.10.1
+[0m14:26:12.108382 [info ] [MainThread]: Up to date!
+[0m14:26:12.108912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '9e28852b-6fc4-4e79-b890-d484e81860ff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105999120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10599af20>]}
+[0m14:26:12.109369 [info ] [MainThread]: 
+[0m14:26:12.109729 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'data-mie/dbt_profiler', 'calogica/dbt_expectations']                 
+Update your versions in packages.yml, then run dbt deps
+[0m14:26:12.113826 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 3 occurrences
+- PackageRedirectDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:26:12.128967 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.9577258, "process_in_blocks": "0", "process_kernel_time": 0.434824, "process_mem_max_rss": "126631936", "process_out_blocks": "0", "process_user_time": 1.191802}
+[0m14:26:12.129531 [debug] [MainThread]: Command `cli deps` succeeded at 14:26:12.129459 after 2.96 seconds
+[0m14:26:12.129908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104798370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f80340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056baa40>]}
+[0m14:26:12.130280 [debug] [MainThread]: Flushing usage events
+[0m14:26:12.678279 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:33:40.455085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10875c3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109682f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109682d70>]}
+
+
+============================== 13:33:40.459040 | 608affac-8500-4f4f-a1f0-2731d7a39435 ==============================
+[0m13:33:40.459040 [info ] [MainThread]: Running with dbt=1.11.2
+[0m13:33:40.459545 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'debug': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'empty': 'None', 'version_check': 'True', 'warn_error': 'None', 'printer_width': '80', 'write_json': 'True', 'static_parser': 'True', 'no_print': 'None', 'log_format': 'default', 'target_path': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'fail_fast': 'False'}
+[0m13:33:40.462065 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `materialized` found at
+`keboola_northwind.staging.materialized` in file `/Users/martin/Library/Mobile D
+ocuments/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.y
+ml`. Hierarchical config values without a '+' prefix are deprecated in
+dbt_project.yml.
+[0m13:33:40.462599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '608affac-8500-4f4f-a1f0-2731d7a39435', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096825c0>]}
+[0m13:33:40.616727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '608affac-8500-4f4f-a1f0-2731d7a39435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109604d30>]}
+[0m13:33:40.715290 [debug] [MainThread]: Set downloads directory='/var/folders/cx/dyw17k8n62l401jn8161bnfr0000gn/T/dbt-downloads-1y755b1i'
+[0m13:33:40.715764 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m13:33:41.025189 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m13:33:41.027075 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m13:33:41.120987 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m13:33:41.126031 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json
+[0m13:33:41.341168 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json 200
+[0m13:33:41.346852 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m13:33:41.531602 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m13:33:41.534239 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_expectations` package is deprecated in favor of
+`metaplane/dbt_expectations`. Please update your `packages.yml` configuration to
+use `metaplane/dbt_expectations` instead.
+[0m13:33:41.534833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '608affac-8500-4f4f-a1f0-2731d7a39435', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098a5a20>]}
+[0m13:33:41.537222 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m13:33:41.635757 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m13:33:41.638433 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m13:33:42.084197 [info ] [MainThread]: Installed from version 1.1.1
+[0m13:33:42.084676 [info ] [MainThread]: Updated version available: 1.3.3
+[0m13:33:42.085229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '608affac-8500-4f4f-a1f0-2731d7a39435', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087eedd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10999f9a0>]}
+[0m13:33:42.085654 [info ] [MainThread]: Installing data-mie/dbt_profiler
+[0m13:33:42.442427 [info ] [MainThread]: Installed from version 0.8.1
+[0m13:33:42.442965 [info ] [MainThread]: Updated version available: 0.8.4
+[0m13:33:42.443485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '608affac-8500-4f4f-a1f0-2731d7a39435', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087eedd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10999c1c0>]}
+[0m13:33:42.443948 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m13:33:43.921712 [info ] [MainThread]: Installed from version 0.10.1
+[0m13:33:43.922175 [info ] [MainThread]: Updated version available: 0.10.4
+[0m13:33:43.922757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '608affac-8500-4f4f-a1f0-2731d7a39435', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10999ef50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10999ee30>]}
+[0m13:33:43.923157 [info ] [MainThread]: Installing calogica/dbt_date
+[0m13:33:44.209906 [info ] [MainThread]: Installed from version 0.10.1
+[0m13:33:44.210443 [info ] [MainThread]: Up to date!
+[0m13:33:44.210945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '608affac-8500-4f4f-a1f0-2731d7a39435', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10999d1b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10999ef20>]}
+[0m13:33:44.211339 [info ] [MainThread]: 
+[0m13:33:44.211661 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'data-mie/dbt_profiler', 'calogica/dbt_expectations']                 
+Update your versions in packages.yml, then run dbt deps
+[0m13:33:44.214259 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 3 occurrences
+- PackageRedirectDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:33:44.236998 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 3.8330524, "process_in_blocks": "0", "process_kernel_time": 0.440224, "process_mem_max_rss": "126631936", "process_out_blocks": "0", "process_user_time": 1.183206}
+[0m13:33:44.237718 [debug] [MainThread]: Command `cli deps` succeeded at 13:33:44.237593 after 3.83 seconds
+[0m13:33:44.238558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10875c3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f44280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109604d30>]}
+[0m13:33:44.239465 [debug] [MainThread]: Flushing usage events
+[0m13:33:44.688449 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:54:21.339032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d043d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e2f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e2efb0>]}
+
+
+============================== 14:54:21.345226 | 7825b9eb-ad1f-4a0d-bfe3-9e355da1f1a2 ==============================
+[0m14:54:21.345226 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:54:21.345845 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'fail_fast': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'printer_width': '80', 'cache_selected_only': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'no_print': 'None', 'empty': 'None'}
+[0m14:54:21.359986 [info ] [MainThread]: dbt version: 1.11.2
+[0m14:54:21.360407 [info ] [MainThread]: python version: 3.10.19
+[0m14:54:21.360690 [info ] [MainThread]: python path: /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/.conda/bin/python3.10
+[0m14:54:21.360965 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit
+[0m14:54:21.413522 [info ] [MainThread]: Using profiles dir at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service
+[0m14:54:21.414171 [info ] [MainThread]: Using profiles.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/profiles.yml
+[0m14:54:21.414572 [info ] [MainThread]: Using dbt_project.yml file at /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.yml
+[0m14:54:21.415557 [info ] [MainThread]: adapter type: keboola_snowflake
+[0m14:54:21.415912 [info ] [MainThread]: adapter version: 0.2.5
+[0m14:54:21.478142 [info ] [MainThread]: Configuration:
+[0m14:54:21.478614 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:54:21.478904 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:54:21.479388 [info ] [MainThread]: Required dependencies:
+[0m14:54:21.479895 [debug] [MainThread]: Executing "git --help"
+[0m14:54:21.495027 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:54:21.495920 [debug] [MainThread]: STDERR: "b''"
+[0m14:54:21.496467 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:54:21.496933 [info ] [MainThread]: Connection:
+[0m14:54:21.497264 [info ] [MainThread]:   base_url: https://query.us-east4.gcp.keboola.com
+[0m14:54:21.497701 [info ] [MainThread]:   branch_id: 1752
+[0m14:54:21.498211 [info ] [MainThread]:   workspace_id: 13376035
+[0m14:54:21.498604 [info ] [MainThread]:   database: KBC_USE4_834
+[0m14:54:21.498898 [info ] [MainThread]:   schema: WORKSPACE_21534344
+[0m14:54:21.499169 [info ] [MainThread]:   warehouse: KEBOOLA_SMALL
+[0m14:54:21.499426 [info ] [MainThread]:   role: None
+[0m14:54:21.499697 [info ] [MainThread]:   query_tag: None
+[0m14:54:21.499960 [info ] [MainThread]:   connect_retries: 1
+[0m14:54:21.500215 [info ] [MainThread]:   connect_timeout: None
+[0m14:54:21.500737 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m14:54:21.586380 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'debug'
+[0m14:54:21.673264 [debug] [MainThread]: Using keboola_snowflake connection "debug"
+[0m14:54:21.673674 [debug] [MainThread]: On debug: select 1 as id
+[0m14:54:21.674051 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:54:24.227321 [debug] [MainThread]: SQL status: completed 1 in 2.553 seconds
+[0m14:54:24.228553 [debug] [MainThread]: On debug: Close
+[0m14:54:24.229361 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:54:24.229886 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:54:24.244155 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.9570663, "process_in_blocks": "0", "process_kernel_time": 0.327544, "process_mem_max_rss": "126386176", "process_out_blocks": "0", "process_user_time": 0.989844}
+[0m14:54:24.244958 [debug] [MainThread]: Command `dbt debug` succeeded at 14:54:24.244854 after 2.96 seconds
+[0m14:54:24.245729 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:54:24.246298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d043d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ebda20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1136b8b80>]}
+[0m14:54:24.246818 [debug] [MainThread]: Flushing usage events
+[0m14:54:24.713683 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:54:37.856528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c044c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10762f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10762efb0>]}
+
+
+============================== 14:54:37.860634 | d07e2472-d43c-4c19-8620-040a20b8e90e ==============================
+[0m14:54:37.860634 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:54:37.861090 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'version_check': 'True', 'printer_width': '80', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'use_experimental_parser': 'False', 'static_parser': 'True', 'write_json': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'quiet': 'False', 'empty': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt deps', 'no_print': 'None', 'target_path': 'None', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'debug': 'False'}
+[0m14:54:37.863565 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `materialized` found at
+`keboola_northwind.warehouse.materialized` in file `/Users/martin/Library/Mobile
+Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/dbt_project.
+yml`. Hierarchical config values without a '+' prefix are deprecated in
+dbt_project.yml.
+[0m14:54:37.864251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd07e2472-d43c-4c19-8620-040a20b8e90e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10762e680>]}
+[0m14:54:37.953222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd07e2472-d43c-4c19-8620-040a20b8e90e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078adc90>]}
+[0m14:54:38.069842 [debug] [MainThread]: Set downloads directory='/var/folders/cx/dyw17k8n62l401jn8161bnfr0000gn/T/dbt-downloads-kvm9bp8j'
+[0m14:54:38.070482 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m14:54:38.382257 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m14:54:38.384080 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m14:54:38.505240 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m14:54:38.509513 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json
+[0m14:54:38.771773 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/data-mie/dbt_profiler.json 200
+[0m14:54:38.774763 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json
+[0m14:54:38.869778 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_expectations.json 200
+[0m14:54:38.872005 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_expectations` package is deprecated in favor of
+`metaplane/dbt_expectations`. Please update your `packages.yml` configuration to
+use `metaplane/dbt_expectations` instead.
+[0m14:54:38.872552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd07e2472-d43c-4c19-8620-040a20b8e90e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107954130>]}
+[0m14:54:38.874715 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m14:54:39.323653 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m14:54:39.326366 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m14:54:39.711118 [info ] [MainThread]: Installed from version 1.1.1
+[0m14:54:39.711570 [info ] [MainThread]: Updated version available: 1.3.3
+[0m14:54:39.712003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd07e2472-d43c-4c19-8620-040a20b8e90e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c998a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c479a0>]}
+[0m14:54:39.712420 [info ] [MainThread]: Installing data-mie/dbt_profiler
+[0m14:54:40.081455 [info ] [MainThread]: Installed from version 0.8.1
+[0m14:54:40.081984 [info ] [MainThread]: Updated version available: 0.8.4
+[0m14:54:40.082362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd07e2472-d43c-4c19-8620-040a20b8e90e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c998a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c44400>]}
+[0m14:54:40.083148 [info ] [MainThread]: Installing calogica/dbt_expectations
+[0m14:54:41.053357 [info ] [MainThread]: Installed from version 0.10.1
+[0m14:54:41.053847 [info ] [MainThread]: Updated version available: 0.10.4
+[0m14:54:41.054208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd07e2472-d43c-4c19-8620-040a20b8e90e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c477f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c46e30>]}
+[0m14:54:41.054577 [info ] [MainThread]: Installing calogica/dbt_date
+[0m14:54:41.275325 [info ] [MainThread]: Installed from version 0.10.1
+[0m14:54:41.275788 [info ] [MainThread]: Up to date!
+[0m14:54:41.276146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd07e2472-d43c-4c19-8620-040a20b8e90e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c45300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c47820>]}
+[0m14:54:41.276516 [info ] [MainThread]: 
+[0m14:54:41.276861 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'data-mie/dbt_profiler', 'calogica/dbt_expectations']                 
+Update your versions in packages.yml, then run dbt deps
+[0m14:54:41.278904 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 3 occurrences
+- PackageRedirectDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m14:54:41.281849 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 3.4762425, "process_in_blocks": "0", "process_kernel_time": 0.454098, "process_mem_max_rss": "127107072", "process_out_blocks": "0", "process_user_time": 1.177383}
+[0m14:54:41.282364 [debug] [MainThread]: Command `dbt deps` succeeded at 14:54:41.282301 after 3.48 seconds
+[0m14:54:41.282740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c044c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052cbb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107907d60>]}
+[0m14:54:41.283092 [debug] [MainThread]: Flushing usage events
+[0m14:54:41.752965 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:54:53.895210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105dbc460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cda2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cda1a0>]}
+
+
+============================== 14:54:53.899716 | 6794703b-9268-4197-981b-b734b591fc6c ==============================
+[0m14:54:53.899716 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:54:53.900170 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'write_json': 'True', 'no_print': 'None', 'invocation_command': 'dbt run', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'quiet': 'False', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'log_format': 'default', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'target_path': 'None'}
+[0m14:54:54.028585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6794703b-9268-4197-981b-b734b591fc6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106608100>]}
+[0m14:54:54.065483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6794703b-9268-4197-981b-b734b591fc6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c9b0d0>]}
+[0m14:54:54.066662 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m14:54:54.170437 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m14:54:54.383777 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:54:54.384235 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:54:54.384525 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:54:54.419864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6794703b-9268-4197-981b-b734b591fc6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107620130>]}
+[0m14:54:54.502575 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/manifest.json
+[0m14:54:54.505102 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/semantic_manifest.json
+[0m14:54:54.525498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6794703b-9268-4197-981b-b734b591fc6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075bff10>]}
+[0m14:54:54.526202 [info ] [MainThread]: Found 12 models, 47 data tests, 13 sources, 957 macros, 4 groups
+[0m14:54:54.526753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6794703b-9268-4197-981b-b734b591fc6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075bffd0>]}
+[0m14:54:54.528443 [info ] [MainThread]: 
+[0m14:54:54.528815 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:54:54.529103 [info ] [MainThread]: 
+[0m14:54:54.529492 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'master'
+[0m14:54:54.532567 [debug] [ThreadPool]: Acquiring new keboola_snowflake connection 'list_KBC_USE4_834'
+[0m14:54:54.605823 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834"
+[0m14:54:54.606306 [debug] [ThreadPool]: On list_KBC_USE4_834: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834"} */
+show terse schemas in database KBC_USE4_834
+    limit 10000
+[0m14:54:54.606613 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:54:57.160775 [debug] [ThreadPool]: SQL status: completed 11 in 2.554 seconds
+[0m14:54:57.162491 [debug] [ThreadPool]: On list_KBC_USE4_834: Close
+[0m14:54:57.164388 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KBC_USE4_834, now list_KBC_USE4_834_WORKSPACE_21534344)
+[0m14:54:57.175037 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834_WORKSPACE_21534344"
+[0m14:54:57.175609 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834_WORKSPACE_21534344"} */
+show objects in KBC_USE4_834.WORKSPACE_21534344
+    limit 10000
+[0m14:54:57.175988 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:54:57.926139 [debug] [ThreadPool]: KeboolaSnowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834_WORKSPACE_21534344"} */
+show objects in KBC_USE4_834.WORKSPACE_21534344
+    limit 10000
+[0m14:54:57.926929 [debug] [ThreadPool]: KeboolaSnowflake adapter: Rolling back transaction.
+[0m14:54:57.927649 [debug] [ThreadPool]: KeboolaSnowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m14:54:57.928266 [debug] [ThreadPool]: KeboolaSnowflake adapter: Rolling back transaction.
+[0m14:54:57.928847 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: Close
+[0m14:54:57.929861 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:54:57.930350 [debug] [MainThread]: Connection 'list_KBC_USE4_834_WORKSPACE_21534344' was properly closed.
+[0m14:54:57.930803 [info ] [MainThread]: 
+[0m14:54:57.931279 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 3.40 seconds (3.40s).
+[0m14:54:57.931887 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Invalid isoformat string: '2026-01-20T22:54:57.73193+00:00'
+[0m14:54:57.935957 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.090033, "process_in_blocks": "0", "process_kernel_time": 0.350334, "process_mem_max_rss": "136183808", "process_out_blocks": "0", "process_user_time": 1.324761}
+[0m14:54:57.936701 [debug] [MainThread]: Command `dbt run` failed at 14:54:57.936602 after 4.09 seconds
+[0m14:54:57.937225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105dbc460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075bfe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c25d50>]}
+[0m14:54:57.937705 [debug] [MainThread]: Flushing usage events
+[0m14:54:58.338755 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:57:56.977130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107304490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c22320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c221d0>]}
+
+
+============================== 14:57:56.982487 | f5503949-d980-4803-b09e-dccf17889c38 ==============================
+[0m14:57:56.982487 [info ] [MainThread]: Running with dbt=1.11.2
+[0m14:57:56.983095 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'debug': 'False', 'use_colors': 'True', 'log_format': 'default', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'version_check': 'True', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'no_print': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'warn_error': 'None', 'quiet': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'printer_width': '80'}
+[0m14:57:57.127509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073b8250>]}
+[0m14:57:57.163091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1184dc160>]}
+[0m14:57:57.164853 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m14:57:57.278582 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m14:57:57.491990 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:57:57.492496 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:57:57.492812 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:57:57.527950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119774130>]}
+[0m14:57:57.611093 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/manifest.json
+[0m14:57:57.613509 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/semantic_manifest.json
+[0m14:57:57.633092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11970bcd0>]}
+[0m14:57:57.633611 [info ] [MainThread]: Found 12 models, 47 data tests, 13 sources, 957 macros, 4 groups
+[0m14:57:57.633938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11970aaa0>]}
+[0m14:57:57.635613 [info ] [MainThread]: 
+[0m14:57:57.636083 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:57:57.636412 [info ] [MainThread]: 
+[0m14:57:57.636839 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'master'
+[0m14:57:57.640078 [debug] [ThreadPool]: Acquiring new keboola_snowflake connection 'list_KBC_USE4_834'
+[0m14:57:57.735106 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834"
+[0m14:57:57.735527 [debug] [ThreadPool]: On list_KBC_USE4_834: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834"} */
+show terse schemas in database KBC_USE4_834
+    limit 10000
+[0m14:57:57.735826 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:57:59.934782 [debug] [ThreadPool]: SQL status: completed 11 in 2.199 seconds
+[0m14:57:59.936587 [debug] [ThreadPool]: On list_KBC_USE4_834: Close
+[0m14:57:59.938759 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KBC_USE4_834, now list_KBC_USE4_834_WORKSPACE_21534344)
+[0m14:57:59.948626 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834_WORKSPACE_21534344"
+[0m14:57:59.949155 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834_WORKSPACE_21534344"} */
+show objects in KBC_USE4_834.WORKSPACE_21534344
+    limit 10000
+[0m14:57:59.949733 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:58:03.339473 [debug] [ThreadPool]: SQL status: completed 11 in 3.390 seconds
+[0m14:58:03.341605 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: Close
+[0m14:58:03.343816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105300a30>]}
+[0m14:58:03.347281 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_customer
+[0m14:58:03.347911 [info ] [Thread-1 (]: 1 of 12 START sql view model WORKSPACE_21534344.stg_customer ................... [RUN]
+[0m14:58:03.348424 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_KBC_USE4_834_WORKSPACE_21534344, now model.keboola_northwind.stg_customer)
+[0m14:58:03.348898 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_customer
+[0m14:58:03.355582 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_customer"
+[0m14:58:03.357376 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_customer
+[0m14:58:03.377065 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_customer"
+[0m14:58:03.378820 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_customer"
+[0m14:58:03.379229 [debug] [Thread-1 (]: On model.keboola_northwind.stg_customer: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_customer"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_customer
+  
+  
+  
+  
+  as (
+    with source as (
+    select * 
+    from "KEBOOLA_7167"."in.c-northwind_dataset"."CUSTOMERS"
+)
+select 
+    "CUSTOMER_ID"
+	,"COMPANY_NAME"
+	,"CONTACT_NAME"
+	,"CONTACT_TITLE"
+	,"ADDRESS"
+	,"CITY"
+	,"REGION"
+	,"POSTAL_CODE"
+	,"COUNTRY"
+	,"PHONE"
+	,"FAX"
+	,"_timestamp" AS ingestion_timestamp
+from source
+  )
+[0m14:58:03.379571 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:04.864403 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola query id: 019bdda1-241d-7a99-a6ee-07dc2b300ae8
+[0m14:58:04.865204 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola error: SQL compilation error:
+Database 'KEBOOLA_7167' does not exist or not authorized.
+[0m14:58:04.865948 [debug] [Thread-1 (]: On model.keboola_northwind.stg_customer: Close
+[0m14:58:04.876395 [debug] [Thread-1 (]: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_customer.sql
+[0m14:58:04.880241 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ef6980>]}
+[0m14:58:04.881234 [error] [Thread-1 (]: 1 of 12 ERROR creating sql view model WORKSPACE_21534344.stg_customer .......... [[31mERROR[0m in 1.53s]
+[0m14:58:04.881908 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_customer
+[0m14:58:04.882425 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_employees
+[0m14:58:04.882970 [debug] [Thread-4 (]: Marking all children of 'model.keboola_northwind.stg_customer' to be skipped because of status 'error'.  Reason: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_customer.sql.
+[0m14:58:04.883627 [info ] [Thread-1 (]: 2 of 12 START sql view model WORKSPACE_21534344.stg_employees .................. [RUN]
+[0m14:58:04.885832 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_customer, now model.keboola_northwind.stg_employees)
+[0m14:58:04.886333 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_employees
+[0m14:58:04.889426 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_employees"
+[0m14:58:04.890481 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_employees
+[0m14:58:04.894047 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_employees"
+[0m14:58:04.895439 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_employees"
+[0m14:58:04.895993 [debug] [Thread-1 (]: On model.keboola_northwind.stg_employees: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_employees"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_employees
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from "KEBOOLA_7167"."in.c-northwind_dataset"."EMPLOYEES"
+)
+select 
+    "EMPLOYEE_ID"
+	,"LAST_NAME"
+	,"FIRST_NAME"
+	,"TITLE"
+	,"TITLE_OF_COURTESY"
+	,"BIRTH_DATE"
+	,"HIRE_DATE"
+	,"ADDRESS"
+	,"CITY"
+	,"REGION"
+	,"POSTAL_CODE"
+	,"COUNTRY"
+	,"HOME_PHONE"
+	,"EXTENSION"
+	,"PHOTO"
+	,"NOTES"
+	,"REPORTS_TO"
+	,"PHOTO_PATH"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m14:58:04.896471 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:06.379923 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola query id: 019bdda1-2a0f-7e32-a7ce-a6f498277136
+[0m14:58:06.380489 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola error: SQL compilation error:
+Database 'KEBOOLA_7167' does not exist or not authorized.
+[0m14:58:06.381056 [debug] [Thread-1 (]: On model.keboola_northwind.stg_employees: Close
+[0m14:58:06.382221 [debug] [Thread-1 (]: Database Error in model stg_employees (models/staging/stg_employees.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_employees.sql
+[0m14:58:06.382650 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119617430>]}
+[0m14:58:06.383148 [error] [Thread-1 (]: 2 of 12 ERROR creating sql view model WORKSPACE_21534344.stg_employees ......... [[31mERROR[0m in 1.50s]
+[0m14:58:06.383556 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_employees
+[0m14:58:06.383891 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_order_details
+[0m14:58:06.384300 [debug] [Thread-4 (]: Marking all children of 'model.keboola_northwind.stg_employees' to be skipped because of status 'error'.  Reason: Database Error in model stg_employees (models/staging/stg_employees.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_employees.sql.
+[0m14:58:06.384654 [info ] [Thread-1 (]: 3 of 12 START sql view model WORKSPACE_21534344.stg_order_details .............. [RUN]
+[0m14:58:06.385169 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_employees, now model.keboola_northwind.stg_order_details)
+[0m14:58:06.385585 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_order_details
+[0m14:58:06.389377 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_order_details"
+[0m14:58:06.390432 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_order_details
+[0m14:58:06.393287 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_order_details"
+[0m14:58:06.394133 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_order_details"
+[0m14:58:06.394634 [debug] [Thread-1 (]: On model.keboola_northwind.stg_order_details: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_order_details"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_order_details
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from "KEBOOLA_7167"."in.c-northwind_dataset"."ORDER_DETAILS"
+)
+select 
+    "ORDER_ID"
+    ,"PRODUCT_ID"
+    ,"UNIT_PRICE"
+    ,"QUANTITY"
+    ,"DISCOUNT"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m14:58:06.394998 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:07.833165 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola query id: 019bdda1-2fed-736d-bf82-897d53aa2c87
+[0m14:58:07.834340 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola error: SQL compilation error:
+Database 'KEBOOLA_7167' does not exist or not authorized.
+[0m14:58:07.835048 [debug] [Thread-1 (]: On model.keboola_northwind.stg_order_details: Close
+[0m14:58:07.837214 [debug] [Thread-1 (]: Database Error in model stg_order_details (models/staging/stg_order_details.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_order_details.sql
+[0m14:58:07.838043 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10739aa10>]}
+[0m14:58:07.838853 [error] [Thread-1 (]: 3 of 12 ERROR creating sql view model WORKSPACE_21534344.stg_order_details ..... [[31mERROR[0m in 1.45s]
+[0m14:58:07.839522 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_order_details
+[0m14:58:07.840037 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_orders
+[0m14:58:07.840707 [debug] [Thread-4 (]: Marking all children of 'model.keboola_northwind.stg_order_details' to be skipped because of status 'error'.  Reason: Database Error in model stg_order_details (models/staging/stg_order_details.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_order_details.sql.
+[0m14:58:07.841388 [info ] [Thread-1 (]: 4 of 12 START sql view model WORKSPACE_21534344.stg_orders ..................... [RUN]
+[0m14:58:07.843071 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_order_details, now model.keboola_northwind.stg_orders)
+[0m14:58:07.843684 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_orders
+[0m14:58:07.847135 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_orders"
+[0m14:58:07.848374 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_orders
+[0m14:58:07.852297 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_orders"
+[0m14:58:07.853478 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_orders"
+[0m14:58:07.854055 [debug] [Thread-1 (]: On model.keboola_northwind.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_orders"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_orders
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from "KEBOOLA_7167"."in.c-northwind_dataset"."ORDERS"
+)
+select
+    "ORDER_ID"
+    ,"CUSTOMER_ID"
+    ,"EMPLOYEE_ID"
+    ,TRY_CAST("ORDER_DATE" AS DATE) AS "ORDER_DATE"
+    ,TRY_CAST("REQUIRED_DATE" AS DATE) AS "REQUIRED_DATE"
+    ,TRY_CAST("SHIPPED_DATE" AS DATE) AS "SHIPPED_DATE"
+    ,"SHIP_VIA" AS "SHIPPER_ID"
+    ,"FREIGHT"
+    ,"SHIP_NAME"
+    ,"SHIP_ADDRESS"
+    ,"SHIP_CITY"
+    ,"SHIP_REGION"
+    ,"SHIP_POSTAL_CODE"
+    ,"SHIP_COUNTRY"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m14:58:07.854490 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:09.527960 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola query id: 019bdda1-3602-7245-9978-576c51e64dbf
+[0m14:58:09.528593 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola error: SQL compilation error:
+Database 'KEBOOLA_7167' does not exist or not authorized.
+[0m14:58:09.529282 [debug] [Thread-1 (]: On model.keboola_northwind.stg_orders: Close
+[0m14:58:09.530746 [debug] [Thread-1 (]: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_orders.sql
+[0m14:58:09.531327 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ef6980>]}
+[0m14:58:09.534341 [error] [Thread-1 (]: 4 of 12 ERROR creating sql view model WORKSPACE_21534344.stg_orders ............ [[31mERROR[0m in 1.69s]
+[0m14:58:09.534888 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_orders
+[0m14:58:09.535273 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_products
+[0m14:58:09.535675 [debug] [Thread-4 (]: Marking all children of 'model.keboola_northwind.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_orders.sql.
+[0m14:58:09.536134 [info ] [Thread-1 (]: 5 of 12 START sql view model WORKSPACE_21534344.stg_products ................... [RUN]
+[0m14:58:09.536738 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_orders, now model.keboola_northwind.stg_products)
+[0m14:58:09.537097 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_products
+[0m14:58:09.575920 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_products"
+[0m14:58:09.576904 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_products
+[0m14:58:09.579748 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_products"
+[0m14:58:09.580677 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_products"
+[0m14:58:09.581067 [debug] [Thread-1 (]: On model.keboola_northwind.stg_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_products"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_products
+  
+  
+  
+  
+  as (
+    with source as (
+    select cast("SUPPLIER_ID" as integer) as "SUPPLIER_ID"
+           ,"PRODUCT_ID"
+           ,"PRODUCT_NAME"
+           ,"CATEGORY_ID"
+           ,TRY_TO_NUMERIC("QUANTITY_PER_UNIT") AS "QUANTITY_PER_UNIT"
+           ,TRY_CAST("UNIT_PRICE" AS FLOAT) AS "UNIT_PRICE"
+           ,TRY_TO_NUMERIC("UNITS_ON_ORDER") AS "UNITS_ON_ORDER"
+           ,TRY_TO_NUMERIC("UNITS_IN_STOCK") AS "UNITS_IN_STOCK"
+           ,TRY_TO_NUMERIC("REORDER_LEVEL") AS "REORDER_LEVEL"
+           ,"DISCONTINUED"
+           ,"_timestamp" AS ingestion_timestamp
+    from "KEBOOLA_7167"."in.c-northwind_dataset"."PRODUCTS"
+)
+select 
+    *
+from source
+  )
+[0m14:58:09.581389 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:10.700803 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola query id: 019bdda1-3c5a-73a3-9dfb-00e0b63e0f1e
+[0m14:58:10.701895 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola error: SQL compilation error:
+Database 'KEBOOLA_7167' does not exist or not authorized.
+[0m14:58:10.702699 [debug] [Thread-1 (]: On model.keboola_northwind.stg_products: Close
+[0m14:58:10.704568 [debug] [Thread-1 (]: Database Error in model stg_products (models/staging/stg_products.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_products.sql
+[0m14:58:10.705297 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1197ea410>]}
+[0m14:58:10.706039 [error] [Thread-1 (]: 5 of 12 ERROR creating sql view model WORKSPACE_21534344.stg_products .......... [[31mERROR[0m in 1.17s]
+[0m14:58:10.706661 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_products
+[0m14:58:10.707177 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_shippers
+[0m14:58:10.707794 [debug] [Thread-4 (]: Marking all children of 'model.keboola_northwind.stg_products' to be skipped because of status 'error'.  Reason: Database Error in model stg_products (models/staging/stg_products.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_products.sql.
+[0m14:58:10.708538 [info ] [Thread-1 (]: 6 of 12 START sql view model WORKSPACE_21534344.stg_shippers ................... [RUN]
+[0m14:58:10.709336 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_products, now model.keboola_northwind.stg_shippers)
+[0m14:58:10.709867 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_shippers
+[0m14:58:10.714516 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_shippers"
+[0m14:58:10.715753 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_shippers
+[0m14:58:10.719806 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_shippers"
+[0m14:58:10.720951 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_shippers"
+[0m14:58:10.721431 [debug] [Thread-1 (]: On model.keboola_northwind.stg_shippers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_shippers"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_shippers
+  
+  
+  
+  
+  as (
+    with source as (
+
+    select * from "KEBOOLA_7167"."in.c-northwind_dataset"."SHIPPERS"
+)
+select 
+    "SHIPPER_ID"
+    ,"COMPANY_NAME"
+    ,"PHONE"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m14:58:10.721932 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:11.829434 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola query id: 019bdda1-40d7-757b-9de2-0f737c62c84d
+[0m14:58:11.829991 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola error: SQL compilation error:
+Database 'KEBOOLA_7167' does not exist or not authorized.
+[0m14:58:11.830480 [debug] [Thread-1 (]: On model.keboola_northwind.stg_shippers: Close
+[0m14:58:11.831785 [debug] [Thread-1 (]: Database Error in model stg_shippers (models/staging/stg_shippers.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_shippers.sql
+[0m14:58:11.832241 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ee4f40>]}
+[0m14:58:11.832787 [error] [Thread-1 (]: 6 of 12 ERROR creating sql view model WORKSPACE_21534344.stg_shippers .......... [[31mERROR[0m in 1.12s]
+[0m14:58:11.833240 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_shippers
+[0m14:58:11.833600 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_suppliers
+[0m14:58:11.834021 [info ] [Thread-1 (]: 7 of 12 START sql view model WORKSPACE_21534344.stg_suppliers .................. [RUN]
+[0m14:58:11.834528 [debug] [Thread-4 (]: Marking all children of 'model.keboola_northwind.stg_shippers' to be skipped because of status 'error'.  Reason: Database Error in model stg_shippers (models/staging/stg_shippers.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_shippers.sql.
+[0m14:58:11.835006 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_shippers, now model.keboola_northwind.stg_suppliers)
+[0m14:58:11.835787 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_suppliers
+[0m14:58:11.838342 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_suppliers"
+[0m14:58:11.839233 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_suppliers
+[0m14:58:11.842209 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_suppliers"
+[0m14:58:11.843156 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_suppliers"
+[0m14:58:11.843505 [debug] [Thread-1 (]: On model.keboola_northwind.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_suppliers"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_suppliers
+  
+  
+  
+  
+  as (
+    with source as (
+
+    select * from "KEBOOLA_7167"."in.c-northwind_dataset"."SUPPLIERS"
+)
+select 
+    "SUPPLIER_ID"
+	,"COMPANY_NAME"
+	,"CONTACT_NAME"
+	,"CONTACT_TITLE"
+	,"ADDRESS"
+	,"CITY"
+	,"REGION"
+	,"POSTAL_CODE"
+	,"COUNTRY"
+	,"PHONE"
+	,"FAX"
+	,"HOMEPAGE"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m14:58:11.843828 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:58:12.982486 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola query id: 019bdda1-4528-7933-8f98-a42d407c331c
+[0m14:58:12.983272 [debug] [Thread-1 (]: KeboolaSnowflake adapter: Keboola error: SQL compilation error:
+Database 'KEBOOLA_7167' does not exist or not authorized.
+[0m14:58:12.984101 [debug] [Thread-1 (]: On model.keboola_northwind.stg_suppliers: Close
+[0m14:58:12.985857 [debug] [Thread-1 (]: Database Error in model stg_suppliers (models/staging/stg_suppliers.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_suppliers.sql
+[0m14:58:12.986452 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f5503949-d980-4803-b09e-dccf17889c38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119789120>]}
+[0m14:58:12.987164 [error] [Thread-1 (]: 7 of 12 ERROR creating sql view model WORKSPACE_21534344.stg_suppliers ......... [[31mERROR[0m in 1.15s]
+[0m14:58:12.987771 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_suppliers
+[0m14:58:12.988243 [debug] [Thread-1 (]: Began running node model.keboola_northwind.dim_customer
+[0m14:58:12.988980 [debug] [Thread-4 (]: Marking all children of 'model.keboola_northwind.stg_suppliers' to be skipped because of status 'error'.  Reason: Database Error in model stg_suppliers (models/staging/stg_suppliers.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_suppliers.sql.
+[0m14:58:12.989622 [info ] [Thread-1 (]: 8 of 12 SKIP relation WORKSPACE_21534344.dim_customer .......................... [[33mSKIP[0m]
+[0m14:58:12.990420 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.dim_customer
+[0m14:58:12.991016 [debug] [Thread-1 (]: Began running node model.keboola_northwind.dim_employee
+[0m14:58:12.991753 [info ] [Thread-1 (]: 9 of 12 SKIP relation WORKSPACE_21534344.dim_employee .......................... [[33mSKIP[0m]
+[0m14:58:12.992334 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.dim_employee
+[0m14:58:12.992767 [debug] [Thread-1 (]: Began running node model.keboola_northwind.fact_sales
+[0m14:58:12.993298 [info ] [Thread-1 (]: 10 of 12 SKIP relation WORKSPACE_21534344.fact_sales ........................... [[33mSKIP[0m]
+[0m14:58:12.993803 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.fact_sales
+[0m14:58:12.994234 [debug] [Thread-1 (]: Began running node model.keboola_northwind.dim_product
+[0m14:58:12.994832 [info ] [Thread-1 (]: 11 of 12 SKIP relation WORKSPACE_21534344.dim_product .......................... [[33mSKIP[0m]
+[0m14:58:12.995491 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.dim_product
+[0m14:58:12.996346 [debug] [Thread-1 (]: Began running node model.keboola_northwind.obt_sales_overview
+[0m14:58:12.997041 [info ] [Thread-1 (]: 12 of 12 SKIP relation WORKSPACE_21534344.obt_sales_overview ................... [[33mSKIP[0m]
+[0m14:58:12.997527 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.obt_sales_overview
+[0m14:58:12.998499 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:58:12.998913 [debug] [MainThread]: Connection 'model.keboola_northwind.stg_suppliers' was properly closed.
+[0m14:58:13.000119 [info ] [MainThread]: 
+[0m14:58:13.000505 [info ] [MainThread]: Finished running 5 table models, 7 view models in 0 hours 0 minutes and 15.36 seconds (15.36s).
+[0m14:58:13.001643 [debug] [MainThread]: Command end result
+[0m14:58:13.039406 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/manifest.json
+[0m14:58:13.042027 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/semantic_manifest.json
+[0m14:58:13.046783 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/run_results.json
+[0m14:58:13.047201 [info ] [MainThread]: 
+[0m14:58:13.047538 [info ] [MainThread]: [31mCompleted with 7 errors, 0 partial successes, and 0 warnings:[0m
+[0m14:58:13.047874 [info ] [MainThread]: 
+[0m14:58:13.048633 [error] [MainThread]: [31mFailure in model stg_customer (models/staging/stg_customer.sql)[0m
+[0m14:58:13.049109 [error] [MainThread]:   Database Error in model stg_customer (models/staging/stg_customer.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_customer.sql
+[0m14:58:13.049484 [info ] [MainThread]: 
+[0m14:58:13.049829 [info ] [MainThread]:   compiled code at target/compiled/keboola_northwind/models/staging/stg_customer.sql
+[0m14:58:13.050108 [info ] [MainThread]: 
+[0m14:58:13.050424 [error] [MainThread]: [31mFailure in model stg_employees (models/staging/stg_employees.sql)[0m
+[0m14:58:13.050920 [error] [MainThread]:   Database Error in model stg_employees (models/staging/stg_employees.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_employees.sql
+[0m14:58:13.051324 [info ] [MainThread]: 
+[0m14:58:13.051738 [info ] [MainThread]:   compiled code at target/compiled/keboola_northwind/models/staging/stg_employees.sql
+[0m14:58:13.052042 [info ] [MainThread]: 
+[0m14:58:13.052364 [error] [MainThread]: [31mFailure in model stg_order_details (models/staging/stg_order_details.sql)[0m
+[0m14:58:13.052687 [error] [MainThread]:   Database Error in model stg_order_details (models/staging/stg_order_details.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_order_details.sql
+[0m14:58:13.053304 [info ] [MainThread]: 
+[0m14:58:13.053722 [info ] [MainThread]:   compiled code at target/compiled/keboola_northwind/models/staging/stg_order_details.sql
+[0m14:58:13.054056 [info ] [MainThread]: 
+[0m14:58:13.054658 [error] [MainThread]: [31mFailure in model stg_orders (models/staging/stg_orders.sql)[0m
+[0m14:58:13.055049 [error] [MainThread]:   Database Error in model stg_orders (models/staging/stg_orders.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_orders.sql
+[0m14:58:13.055355 [info ] [MainThread]: 
+[0m14:58:13.055675 [info ] [MainThread]:   compiled code at target/compiled/keboola_northwind/models/staging/stg_orders.sql
+[0m14:58:13.055973 [info ] [MainThread]: 
+[0m14:58:13.056313 [error] [MainThread]: [31mFailure in model stg_products (models/staging/stg_products.sql)[0m
+[0m14:58:13.056711 [error] [MainThread]:   Database Error in model stg_products (models/staging/stg_products.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_products.sql
+[0m14:58:13.056991 [info ] [MainThread]: 
+[0m14:58:13.057290 [info ] [MainThread]:   compiled code at target/compiled/keboola_northwind/models/staging/stg_products.sql
+[0m14:58:13.057569 [info ] [MainThread]: 
+[0m14:58:13.057880 [error] [MainThread]: [31mFailure in model stg_shippers (models/staging/stg_shippers.sql)[0m
+[0m14:58:13.058202 [error] [MainThread]:   Database Error in model stg_shippers (models/staging/stg_shippers.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_shippers.sql
+[0m14:58:13.058472 [info ] [MainThread]: 
+[0m14:58:13.058776 [info ] [MainThread]:   compiled code at target/compiled/keboola_northwind/models/staging/stg_shippers.sql
+[0m14:58:13.059270 [info ] [MainThread]: 
+[0m14:58:13.059655 [error] [MainThread]: [31mFailure in model stg_suppliers (models/staging/stg_suppliers.sql)[0m
+[0m14:58:13.059991 [error] [MainThread]:   Database Error in model stg_suppliers (models/staging/stg_suppliers.sql)
+  SQL compilation error:
+  Database 'KEBOOLA_7167' does not exist or not authorized.
+  compiled code at target/run/keboola_northwind/models/staging/stg_suppliers.sql
+[0m14:58:13.060267 [info ] [MainThread]: 
+[0m14:58:13.060557 [info ] [MainThread]:   compiled code at target/compiled/keboola_northwind/models/staging/stg_suppliers.sql
+[0m14:58:13.060829 [info ] [MainThread]: 
+[0m14:58:13.061114 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=7 SKIP=5 NO-OP=0 TOTAL=12
+[0m14:58:13.064113 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 16.143877, "process_in_blocks": "0", "process_kernel_time": 0.433881, "process_mem_max_rss": "142327808", "process_out_blocks": "0", "process_user_time": 1.740885}
+[0m14:58:13.064576 [debug] [MainThread]: Command `dbt run` failed at 14:58:13.064526 after 16.14 seconds
+[0m14:58:13.064938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107304490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10557a260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119e975b0>]}
+[0m14:58:13.065286 [debug] [MainThread]: Flushing usage events
+[0m14:58:13.893864 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:18:14.864642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ef04f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e2b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e2b070>]}
+
+
+============================== 15:18:14.868856 | c0f09158-f069-47a3-8bac-cb4b8b1cfd40 ==============================
+[0m15:18:14.868856 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:18:14.869326 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service', 'version_check': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'introspect': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'empty': 'False', 'printer_width': '80', 'log_path': '/Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'no_print': 'None', 'log_format': 'default'}
+[0m15:18:15.012110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105650190>]}
+[0m15:18:15.048671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055de6b0>]}
+[0m15:18:15.049865 [info ] [MainThread]: Registered adapter: keboola_snowflake=0.2.5
+[0m15:18:15.155528 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:18:15.384509 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:18:15.385854 [debug] [MainThread]: Partial parsing: updated file: keboola_northwind://models/_sources/in.c-northwind_dataset.yml
+[0m15:18:15.626546 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test
+`dbt_expectations.expect_compound_columns_to_be_unique` defined on
+'stg_order_details' in package 'keboola_northwind' (models/staging/schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m15:18:15.627101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b88bb0>]}
+[0m15:18:15.881927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068d6710>]}
+[0m15:18:15.964757 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/manifest.json
+[0m15:18:15.967246 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/semantic_manifest.json
+[0m15:18:15.989319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10618f0d0>]}
+[0m15:18:15.989843 [info ] [MainThread]: Found 12 models, 47 data tests, 13 sources, 957 macros, 4 groups
+[0m15:18:15.990161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ed2530>]}
+[0m15:18:15.991680 [info ] [MainThread]: 
+[0m15:18:15.991995 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:18:15.992256 [info ] [MainThread]: 
+[0m15:18:15.992730 [debug] [MainThread]: Acquiring new keboola_snowflake connection 'master'
+[0m15:18:15.996004 [debug] [ThreadPool]: Acquiring new keboola_snowflake connection 'list_KBC_USE4_834'
+[0m15:18:16.085582 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834"
+[0m15:18:16.086030 [debug] [ThreadPool]: On list_KBC_USE4_834: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834"} */
+show terse schemas in database KBC_USE4_834
+    limit 10000
+[0m15:18:16.086342 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:18:19.097764 [debug] [ThreadPool]: SQL status: completed 11 in 3.011 seconds
+[0m15:18:19.099716 [debug] [ThreadPool]: On list_KBC_USE4_834: Close
+[0m15:18:19.102027 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_KBC_USE4_834, now list_KBC_USE4_834_WORKSPACE_21534344)
+[0m15:18:19.112972 [debug] [ThreadPool]: Using keboola_snowflake connection "list_KBC_USE4_834_WORKSPACE_21534344"
+[0m15:18:19.113598 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "connection_name": "list_KBC_USE4_834_WORKSPACE_21534344"} */
+show objects in KBC_USE4_834.WORKSPACE_21534344
+    limit 10000
+[0m15:18:19.114051 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:18:21.203993 [debug] [ThreadPool]: SQL status: completed 11 in 2.090 seconds
+[0m15:18:21.206531 [debug] [ThreadPool]: On list_KBC_USE4_834_WORKSPACE_21534344: Close
+[0m15:18:21.208578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101efe890>]}
+[0m15:18:21.211809 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_customer
+[0m15:18:21.212463 [info ] [Thread-1 (]: 1 of 12 START sql view model WORKSPACE_21534344.stg_customer ................... [RUN]
+[0m15:18:21.213723 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_KBC_USE4_834_WORKSPACE_21534344, now model.keboola_northwind.stg_customer)
+[0m15:18:21.214202 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_customer
+[0m15:18:21.220441 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_customer"
+[0m15:18:21.221435 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_customer
+[0m15:18:21.239558 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_customer"
+[0m15:18:21.240575 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_customer"
+[0m15:18:21.241062 [debug] [Thread-1 (]: On model.keboola_northwind.stg_customer: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_customer"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_customer
+  
+  
+  
+  
+  as (
+    with source as (
+    select * 
+    from "KBC_USE4_834"."in.c-northwind_dataset"."CUSTOMERS"
+)
+select 
+    "CUSTOMER_ID"
+	,"COMPANY_NAME"
+	,"CONTACT_NAME"
+	,"CONTACT_TITLE"
+	,"ADDRESS"
+	,"CITY"
+	,"REGION"
+	,"POSTAL_CODE"
+	,"COUNTRY"
+	,"PHONE"
+	,"FAX"
+	,"_timestamp" AS ingestion_timestamp
+from source
+  )
+[0m15:18:21.241405 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:23.339476 [debug] [Thread-1 (]: SQL status: completed 1 in 2.098 seconds
+[0m15:18:23.352226 [debug] [Thread-1 (]: On model.keboola_northwind.stg_customer: Close
+[0m15:18:23.354954 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055dd630>]}
+[0m15:18:23.355691 [info ] [Thread-1 (]: 1 of 12 OK created sql view model WORKSPACE_21534344.stg_customer .............. [[32mcompleted 1[0m in 2.14s]
+[0m15:18:23.356182 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_customer
+[0m15:18:23.356541 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_employees
+[0m15:18:23.357131 [info ] [Thread-1 (]: 2 of 12 START sql view model WORKSPACE_21534344.stg_employees .................. [RUN]
+[0m15:18:23.358387 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_customer, now model.keboola_northwind.stg_employees)
+[0m15:18:23.358788 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_employees
+[0m15:18:23.361443 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_employees"
+[0m15:18:23.362250 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_employees
+[0m15:18:23.365394 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_employees"
+[0m15:18:23.366672 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_employees"
+[0m15:18:23.367136 [debug] [Thread-1 (]: On model.keboola_northwind.stg_employees: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_employees"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_employees
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from "KBC_USE4_834"."in.c-northwind_dataset"."EMPLOYEES"
+)
+select 
+    "EMPLOYEE_ID"
+	,"LAST_NAME"
+	,"FIRST_NAME"
+	,"TITLE"
+	,"TITLE_OF_COURTESY"
+	,"BIRTH_DATE"
+	,"HIRE_DATE"
+	,"ADDRESS"
+	,"CITY"
+	,"REGION"
+	,"POSTAL_CODE"
+	,"COUNTRY"
+	,"HOME_PHONE"
+	,"EXTENSION"
+	,"PHOTO"
+	,"NOTES"
+	,"REPORTS_TO"
+	,"PHOTO_PATH"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m15:18:23.367502 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:25.395711 [debug] [Thread-1 (]: SQL status: completed 1 in 2.028 seconds
+[0m15:18:25.397822 [debug] [Thread-1 (]: On model.keboola_northwind.stg_employees: Close
+[0m15:18:25.399316 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c6cee0>]}
+[0m15:18:25.399962 [info ] [Thread-1 (]: 2 of 12 OK created sql view model WORKSPACE_21534344.stg_employees ............. [[32mcompleted 1[0m in 2.04s]
+[0m15:18:25.400554 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_employees
+[0m15:18:25.400956 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_order_details
+[0m15:18:25.404347 [info ] [Thread-1 (]: 3 of 12 START sql view model WORKSPACE_21534344.stg_order_details .............. [RUN]
+[0m15:18:25.404838 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_employees, now model.keboola_northwind.stg_order_details)
+[0m15:18:25.405215 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_order_details
+[0m15:18:25.409127 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_order_details"
+[0m15:18:25.410429 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_order_details
+[0m15:18:25.413521 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_order_details"
+[0m15:18:25.414379 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_order_details"
+[0m15:18:25.414848 [debug] [Thread-1 (]: On model.keboola_northwind.stg_order_details: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_order_details"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_order_details
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from "KBC_USE4_834"."in.c-northwind_dataset"."ORDER_DETAILS"
+)
+select 
+    "ORDER_ID"
+    ,"PRODUCT_ID"
+    ,"UNIT_PRICE"
+    ,"QUANTITY"
+    ,"DISCOUNT"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m15:18:25.415203 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:27.466079 [debug] [Thread-1 (]: SQL status: completed 1 in 2.051 seconds
+[0m15:18:27.468450 [debug] [Thread-1 (]: On model.keboola_northwind.stg_order_details: Close
+[0m15:18:27.469235 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c6cee0>]}
+[0m15:18:27.469815 [info ] [Thread-1 (]: 3 of 12 OK created sql view model WORKSPACE_21534344.stg_order_details ......... [[32mcompleted 1[0m in 2.06s]
+[0m15:18:27.470284 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_order_details
+[0m15:18:27.470748 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_orders
+[0m15:18:27.471257 [info ] [Thread-1 (]: 4 of 12 START sql view model WORKSPACE_21534344.stg_orders ..................... [RUN]
+[0m15:18:27.471696 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_order_details, now model.keboola_northwind.stg_orders)
+[0m15:18:27.472047 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_orders
+[0m15:18:27.475564 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_orders"
+[0m15:18:27.476799 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_orders
+[0m15:18:27.479839 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_orders"
+[0m15:18:27.481020 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_orders"
+[0m15:18:27.481418 [debug] [Thread-1 (]: On model.keboola_northwind.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_orders"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_orders
+  
+  
+  
+  
+  as (
+    with source as (
+    select * from "KBC_USE4_834"."in.c-northwind_dataset"."ORDERS"
+)
+select
+    "ORDER_ID"
+    ,"CUSTOMER_ID"
+    ,"EMPLOYEE_ID"
+    ,TRY_CAST("ORDER_DATE" AS DATE) AS "ORDER_DATE"
+    ,TRY_CAST("REQUIRED_DATE" AS DATE) AS "REQUIRED_DATE"
+    ,TRY_CAST("SHIPPED_DATE" AS DATE) AS "SHIPPED_DATE"
+    ,"SHIP_VIA" AS "SHIPPER_ID"
+    ,"FREIGHT"
+    ,"SHIP_NAME"
+    ,"SHIP_ADDRESS"
+    ,"SHIP_CITY"
+    ,"SHIP_REGION"
+    ,"SHIP_POSTAL_CODE"
+    ,"SHIP_COUNTRY"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m15:18:27.481750 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:29.909782 [debug] [Thread-1 (]: SQL status: completed 1 in 2.428 seconds
+[0m15:18:29.912250 [debug] [Thread-1 (]: On model.keboola_northwind.stg_orders: Close
+[0m15:18:29.913124 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f11d80>]}
+[0m15:18:29.913834 [info ] [Thread-1 (]: 4 of 12 OK created sql view model WORKSPACE_21534344.stg_orders ................ [[32mcompleted 1[0m in 2.44s]
+[0m15:18:29.914424 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_orders
+[0m15:18:29.914896 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_products
+[0m15:18:29.915736 [info ] [Thread-1 (]: 5 of 12 START sql view model WORKSPACE_21534344.stg_products ................... [RUN]
+[0m15:18:29.918249 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_orders, now model.keboola_northwind.stg_products)
+[0m15:18:29.918736 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_products
+[0m15:18:29.921638 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_products"
+[0m15:18:29.922655 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_products
+[0m15:18:29.926161 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_products"
+[0m15:18:29.927313 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_products"
+[0m15:18:29.927862 [debug] [Thread-1 (]: On model.keboola_northwind.stg_products: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_products"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_products
+  
+  
+  
+  
+  as (
+    with source as (
+    select cast("SUPPLIER_ID" as integer) as "SUPPLIER_ID"
+           ,"PRODUCT_ID"
+           ,"PRODUCT_NAME"
+           ,"CATEGORY_ID"
+           ,TRY_TO_NUMERIC("QUANTITY_PER_UNIT") AS "QUANTITY_PER_UNIT"
+           ,TRY_CAST("UNIT_PRICE" AS FLOAT) AS "UNIT_PRICE"
+           ,TRY_TO_NUMERIC("UNITS_ON_ORDER") AS "UNITS_ON_ORDER"
+           ,TRY_TO_NUMERIC("UNITS_IN_STOCK") AS "UNITS_IN_STOCK"
+           ,TRY_TO_NUMERIC("REORDER_LEVEL") AS "REORDER_LEVEL"
+           ,"DISCONTINUED"
+           ,"_timestamp" AS ingestion_timestamp
+    from "KBC_USE4_834"."in.c-northwind_dataset"."PRODUCTS"
+)
+select 
+    *
+from source
+  )
+[0m15:18:29.928289 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:32.002699 [debug] [Thread-1 (]: SQL status: completed 1 in 2.074 seconds
+[0m15:18:32.005102 [debug] [Thread-1 (]: On model.keboola_northwind.stg_products: Close
+[0m15:18:32.006163 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074518d0>]}
+[0m15:18:32.006885 [info ] [Thread-1 (]: 5 of 12 OK created sql view model WORKSPACE_21534344.stg_products .............. [[32mcompleted 1[0m in 2.09s]
+[0m15:18:32.007434 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_products
+[0m15:18:32.007860 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_shippers
+[0m15:18:32.008555 [info ] [Thread-1 (]: 6 of 12 START sql view model WORKSPACE_21534344.stg_shippers ................... [RUN]
+[0m15:18:32.009171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_products, now model.keboola_northwind.stg_shippers)
+[0m15:18:32.009730 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_shippers
+[0m15:18:32.012605 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_shippers"
+[0m15:18:32.013581 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_shippers
+[0m15:18:32.018717 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_shippers"
+[0m15:18:32.020100 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_shippers"
+[0m15:18:32.020561 [debug] [Thread-1 (]: On model.keboola_northwind.stg_shippers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_shippers"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_shippers
+  
+  
+  
+  
+  as (
+    with source as (
+
+    select * from "KBC_USE4_834"."in.c-northwind_dataset"."SHIPPERS"
+)
+select 
+    "SHIPPER_ID"
+    ,"COMPANY_NAME"
+    ,"PHONE"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m15:18:32.020943 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:35.116468 [debug] [Thread-1 (]: SQL status: completed 1 in 3.095 seconds
+[0m15:18:35.118801 [debug] [Thread-1 (]: On model.keboola_northwind.stg_shippers: Close
+[0m15:18:35.119613 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c6cee0>]}
+[0m15:18:35.120798 [info ] [Thread-1 (]: 6 of 12 OK created sql view model WORKSPACE_21534344.stg_shippers .............. [[32mcompleted 1[0m in 3.11s]
+[0m15:18:35.121447 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_shippers
+[0m15:18:35.121925 [debug] [Thread-1 (]: Began running node model.keboola_northwind.stg_suppliers
+[0m15:18:35.122541 [info ] [Thread-1 (]: 7 of 12 START sql view model WORKSPACE_21534344.stg_suppliers .................. [RUN]
+[0m15:18:35.123263 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_shippers, now model.keboola_northwind.stg_suppliers)
+[0m15:18:35.123836 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.stg_suppliers
+[0m15:18:35.127627 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.stg_suppliers"
+[0m15:18:35.128477 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.stg_suppliers
+[0m15:18:35.132086 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.stg_suppliers"
+[0m15:18:35.133133 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.stg_suppliers"
+[0m15:18:35.133581 [debug] [Thread-1 (]: On model.keboola_northwind.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.stg_suppliers"} */
+create or replace   view KBC_USE4_834.WORKSPACE_21534344.stg_suppliers
+  
+  
+  
+  
+  as (
+    with source as (
+
+    select * from "KBC_USE4_834"."in.c-northwind_dataset"."SUPPLIERS"
+)
+select 
+    "SUPPLIER_ID"
+	,"COMPANY_NAME"
+	,"CONTACT_NAME"
+	,"CONTACT_TITLE"
+	,"ADDRESS"
+	,"CITY"
+	,"REGION"
+	,"POSTAL_CODE"
+	,"COUNTRY"
+	,"PHONE"
+	,"FAX"
+	,"HOMEPAGE"
+    ,"_timestamp" as ingestion_timestamp
+from source
+  )
+[0m15:18:35.133962 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:37.254253 [debug] [Thread-1 (]: SQL status: completed 1 in 2.120 seconds
+[0m15:18:37.257209 [debug] [Thread-1 (]: On model.keboola_northwind.stg_suppliers: Close
+[0m15:18:37.258143 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107685720>]}
+[0m15:18:37.258871 [info ] [Thread-1 (]: 7 of 12 OK created sql view model WORKSPACE_21534344.stg_suppliers ............. [[32mcompleted 1[0m in 2.13s]
+[0m15:18:37.259478 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.stg_suppliers
+[0m15:18:37.259945 [debug] [Thread-1 (]: Began running node model.keboola_northwind.dim_customer
+[0m15:18:37.260449 [info ] [Thread-1 (]: 8 of 12 START sql table model WORKSPACE_21534344.dim_customer .................. [RUN]
+[0m15:18:37.260952 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.stg_suppliers, now model.keboola_northwind.dim_customer)
+[0m15:18:37.261532 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.dim_customer
+[0m15:18:37.267394 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.dim_customer"
+[0m15:18:37.268677 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.dim_customer
+[0m15:18:37.287316 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.dim_customer"
+[0m15:18:37.288664 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.dim_customer"
+[0m15:18:37.289135 [debug] [Thread-1 (]: On model.keboola_northwind.dim_customer: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.dim_customer"} */
+create or replace transient table KBC_USE4_834.WORKSPACE_21534344.dim_customer
+    
+    
+    
+    as (with source as (
+    select
+        "CUSTOMER_ID"
+        ,"COMPANY_NAME"
+        ,"CONTACT_NAME"
+        ,"CONTACT_TITLE"
+        ,"ADDRESS"
+        ,"CITY"
+        ,"REGION"
+        ,"POSTAL_CODE"
+        ,"COUNTRY"
+        ,"PHONE"
+        ,"FAX"
+        ,current_timestamp() as insertion_timestamp
+    from KBC_USE4_834.WORKSPACE_21534344.stg_customer
+),
+unique_source as (
+    select
+        *
+        ,ROW_NUMBER() OVER(PARTITION BY "CUSTOMER_ID" ORDER BY "CUSTOMER_ID") AS "row_num"
+    from source
+)
+select
+    * EXCLUDE ("row_num")
+from
+    unique_source
+where
+    "row_num" = 1
+    )
+[0m15:18:37.289507 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:41.774898 [debug] [Thread-1 (]: SQL status: completed 91 in 4.485 seconds
+[0m15:18:41.777841 [debug] [Thread-1 (]: On model.keboola_northwind.dim_customer: Close
+[0m15:18:41.778859 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107453940>]}
+[0m15:18:41.779711 [info ] [Thread-1 (]: 8 of 12 OK created sql table model WORKSPACE_21534344.dim_customer ............. [[32mcompleted 91[0m in 4.52s]
+[0m15:18:41.780380 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.dim_customer
+[0m15:18:41.780886 [debug] [Thread-1 (]: Began running node model.keboola_northwind.dim_employee
+[0m15:18:41.781666 [info ] [Thread-1 (]: 9 of 12 START sql table model WORKSPACE_21534344.dim_employee .................. [RUN]
+[0m15:18:41.783290 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.dim_customer, now model.keboola_northwind.dim_employee)
+[0m15:18:41.783820 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.dim_employee
+[0m15:18:41.786911 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.dim_employee"
+[0m15:18:41.788006 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.dim_employee
+[0m15:18:41.791594 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.dim_employee"
+[0m15:18:41.792650 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.dim_employee"
+[0m15:18:41.793122 [debug] [Thread-1 (]: On model.keboola_northwind.dim_employee: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.dim_employee"} */
+create or replace transient table KBC_USE4_834.WORKSPACE_21534344.dim_employee
+    
+    
+    
+    as (with source as (
+    select
+        "EMPLOYEE_ID"
+        ,"LAST_NAME"
+        ,"FIRST_NAME"
+        ,"TITLE"
+        ,"BIRTH_DATE"
+        ,"HIRE_DATE"
+        ,"ADDRESS"
+        ,"CITY"
+        ,"REGION"
+        ,"POSTAL_CODE"
+        ,"COUNTRY"
+        ,"HOME_PHONE"
+        ,"EXTENSION"
+        ,"NOTES"
+        ,"REPORTS_TO"
+        ,current_timestamp() as insertion_timestamp
+    from KBC_USE4_834.WORKSPACE_21534344.stg_employees
+),
+unique_source as (
+    select
+        *
+        ,ROW_NUMBER() OVER(PARTITION BY "EMPLOYEE_ID" ORDER BY "EMPLOYEE_ID") AS "row_num"
+    from source
+)
+select
+    * EXCLUDE ("row_num")
+from
+    unique_source
+where
+    "row_num" = 1
+    )
+[0m15:18:41.793539 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:45.769392 [debug] [Thread-1 (]: SQL status: completed 9 in 3.976 seconds
+[0m15:18:45.771475 [debug] [Thread-1 (]: On model.keboola_northwind.dim_employee: Close
+[0m15:18:45.772406 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076d9f00>]}
+[0m15:18:45.773038 [info ] [Thread-1 (]: 9 of 12 OK created sql table model WORKSPACE_21534344.dim_employee ............. [[32mcompleted 9[0m in 3.99s]
+[0m15:18:45.773502 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.dim_employee
+[0m15:18:45.773898 [debug] [Thread-1 (]: Began running node model.keboola_northwind.fact_sales
+[0m15:18:45.774658 [info ] [Thread-1 (]: 10 of 12 START sql table model WORKSPACE_21534344.fact_sales ................... [RUN]
+[0m15:18:45.775174 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.dim_employee, now model.keboola_northwind.fact_sales)
+[0m15:18:45.775576 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.fact_sales
+[0m15:18:45.779297 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.fact_sales"
+[0m15:18:45.780378 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.fact_sales
+[0m15:18:45.783299 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.fact_sales"
+[0m15:18:45.784386 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.fact_sales"
+[0m15:18:45.784856 [debug] [Thread-1 (]: On model.keboola_northwind.fact_sales: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.fact_sales"} */
+create or replace transient table KBC_USE4_834.WORKSPACE_21534344.fact_sales
+    
+    
+    
+    as (
+with source as(
+    select
+        od."ORDER_ID" AS "ORDER_ID"
+        ,od."PRODUCT_ID" AS "PRODUCT_ID"
+        ,o."CUSTOMER_ID" AS "CUSTOMER_ID"
+        ,o."EMPLOYEE_ID" AS "EMPLOYEE_ID"
+        ,o."SHIPPER_ID" AS "SHIPPER_ID"
+        ,od."QUANTITY" AS "QUANTITY"
+        ,od."UNIT_PRICE" AS "UNIT_PRICE"
+        ,od."DISCOUNT" AS "DISCOUNT"
+        ,date(o."ORDER_DATE") as "ORDER_DATE"
+        ,o."SHIPPED_DATE" AS "SHIPPED_DATE"
+        ,o."REQUIRED_DATE" AS "REQUIRED_DATE"
+        ,current_timestamp() as insertion_timestamp
+    from KBC_USE4_834.WORKSPACE_21534344.stg_orders o
+    left join
+        KBC_USE4_834.WORKSPACE_21534344.stg_order_details od
+        on
+        od."ORDER_ID" = o."ORDER_ID"
+    where
+        od."ORDER_ID" is not null
+),
+unique_source as (
+    select
+        *
+        ,ROW_NUMBER() OVER(PARTITION BY "CUSTOMER_ID", "EMPLOYEE_ID", "ORDER_ID", "PRODUCT_ID", "SHIPPER_ID", "ORDER_DATE" ORDER BY "CUSTOMER_ID", "EMPLOYEE_ID", "ORDER_ID", "PRODUCT_ID", "SHIPPER_ID", "ORDER_DATE") AS "row_num"
+    from
+        source
+)
+select
+    * EXCLUDE ("row_num")
+from
+    unique_source
+where
+    "row_num" = 1
+    )
+[0m15:18:45.785225 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:50.982759 [debug] [Thread-1 (]: SQL status: completed 2155 in 5.197 seconds
+[0m15:18:50.985722 [debug] [Thread-1 (]: On model.keboola_northwind.fact_sales: Close
+[0m15:18:50.986645 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10760edd0>]}
+[0m15:18:50.987309 [info ] [Thread-1 (]: 10 of 12 OK created sql table model WORKSPACE_21534344.fact_sales .............. [[32mcompleted 2155[0m in 5.21s]
+[0m15:18:50.987863 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.fact_sales
+[0m15:18:50.988346 [debug] [Thread-1 (]: Began running node model.keboola_northwind.dim_product
+[0m15:18:50.988921 [info ] [Thread-1 (]: 11 of 12 START sql table model WORKSPACE_21534344.dim_product .................. [RUN]
+[0m15:18:50.990491 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.fact_sales, now model.keboola_northwind.dim_product)
+[0m15:18:50.991212 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.dim_product
+[0m15:18:50.994689 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.dim_product"
+[0m15:18:50.995847 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.dim_product
+[0m15:18:51.000169 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.dim_product"
+[0m15:18:51.001280 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.dim_product"
+[0m15:18:51.001808 [debug] [Thread-1 (]: On model.keboola_northwind.dim_product: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.dim_product"} */
+create or replace transient table KBC_USE4_834.WORKSPACE_21534344.dim_product
+    
+    
+    
+    as (with source as(
+    select
+        p."PRODUCT_ID" AS "PRODUCT_ID"
+        ,p."PRODUCT_NAME"
+        ,p."CATEGORY_ID"
+        ,s."COMPANY_NAME" as "SUPPLIER_COMPANY"
+        ,p."UNIT_PRICE"
+        ,p."UNITS_ON_ORDER"
+        ,p."UNITS_IN_STOCK"
+        ,p."REORDER_LEVEL"
+        ,p."DISCONTINUED"
+        ,current_timestamp() as insertion_timestamp
+    from
+        KBC_USE4_834.WORKSPACE_21534344.stg_products p
+    left join
+        KBC_USE4_834.WORKSPACE_21534344.stg_suppliers s
+        on
+        s."SUPPLIER_ID" = p."SUPPLIER_ID"
+),
+unique_source as (
+    select
+        *
+        ,ROW_NUMBER() OVER(PARTITION BY "PRODUCT_ID" ORDER BY "PRODUCT_ID") AS "row_num"
+    from source
+)
+select
+    * EXCLUDE ("row_num")
+from
+    unique_source
+where
+    "row_num" = 1
+    )
+[0m15:18:51.002238 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:54.956483 [debug] [Thread-1 (]: SQL status: completed 77 in 3.954 seconds
+[0m15:18:54.959619 [debug] [Thread-1 (]: On model.keboola_northwind.dim_product: Close
+[0m15:18:54.960695 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10760edd0>]}
+[0m15:18:54.961565 [info ] [Thread-1 (]: 11 of 12 OK created sql table model WORKSPACE_21534344.dim_product ............. [[32mcompleted 77[0m in 3.97s]
+[0m15:18:54.962238 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.dim_product
+[0m15:18:54.963100 [debug] [Thread-1 (]: Began running node model.keboola_northwind.obt_sales_overview
+[0m15:18:54.964079 [info ] [Thread-1 (]: 12 of 12 START sql table model WORKSPACE_21534344.obt_sales_overview ........... [RUN]
+[0m15:18:54.964839 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.keboola_northwind.dim_product, now model.keboola_northwind.obt_sales_overview)
+[0m15:18:54.965471 [debug] [Thread-1 (]: Began compiling node model.keboola_northwind.obt_sales_overview
+[0m15:18:54.970877 [debug] [Thread-1 (]: Writing injected SQL for node "model.keboola_northwind.obt_sales_overview"
+[0m15:18:54.972448 [debug] [Thread-1 (]: Began executing node model.keboola_northwind.obt_sales_overview
+[0m15:18:54.976087 [debug] [Thread-1 (]: Writing runtime sql for node "model.keboola_northwind.obt_sales_overview"
+[0m15:18:54.977995 [debug] [Thread-1 (]: Using keboola_snowflake connection "model.keboola_northwind.obt_sales_overview"
+[0m15:18:54.982051 [debug] [Thread-1 (]: On model.keboola_northwind.obt_sales_overview: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "keboola_northwind", "target_name": "dev", "node_id": "model.keboola_northwind.obt_sales_overview"} */
+create or replace transient table KBC_USE4_834.WORKSPACE_21534344.obt_sales_overview
+    
+    
+    
+    as (
+
+with source as (
+    select
+        s."ORDER_ID"
+        ,s."PRODUCT_ID"
+        ,s."CUSTOMER_ID"
+        ,s."EMPLOYEE_ID"
+        ,s."SHIPPER_ID"
+        ,s."QUANTITY"
+        ,s."UNIT_PRICE"
+        ,s."DISCOUNT"
+        ,s."ORDER_DATE"
+        ,s."SHIPPED_DATE"
+        ,s."REQUIRED_DATE"
+	    ,c."COMPANY_NAME" AS "CUSTOMER_COMPANY"
+	    ,c."CONTACT_NAME" AS "CUSTOMER_NAME"
+	    ,c."CONTACT_TITLE" AS "CUSTOMER_TITLE"
+	    ,c."ADDRESS" AS "CUSTOMER_ADDRESS"
+	    ,c."CITY" AS "CUSTOMER_CITY"
+	    ,c."REGION" AS "CUSTOMER_REGION"
+	    ,c."POSTAL_CODE" AS "CUSTOMER_POSTAL_CODE"
+	    ,c."COUNTRY" AS "CUSTOMER_COUNTRY"
+	    ,c."PHONE" AS "CUSTOMER_PHONE"
+	    ,c."FAX" AS "CUSTOMER_FAX"
+        ,e."LAST_NAME" AS "EMPLOYEE_LAST_NAME"
+        ,e."FIRST_NAME" AS "EMPLOYEE_FIRST_NAME"
+        ,e."TITLE" AS "EMPLOYEE_TITLE"
+        ,e."BIRTH_DATE" AS "EMPLOYEE_BIRTH_DATE"
+        ,e."HIRE_DATE" AS "EMPLOYEE_HIRE_DATE"
+        ,e."ADDRESS" AS "EMPLOYEE_ADDRESS"
+        ,e."CITY" AS "EMPLOYEE_CITY"
+        ,e."REGION" AS "EMPLOYEE_REGION"
+        ,e."POSTAL_CODE" AS "EMPLOYEE_POSTAL_CODE"
+        ,e."COUNTRY" AS "EMPLOYEE_COUNTRY"
+        ,e."HOME_PHONE" AS "EMPLOYEE_PHONE"
+        ,e."EXTENSION" AS "EMPLOYEE_EXT"
+        ,e."NOTES" AS "EMPLOYEE_NOTE"
+        ,e."REPORTS_TO" AS "EMPLOYEE_REPORTS_TO"
+        ,p."PRODUCT_NAME"
+        ,p."CATEGORY_ID"
+        ,p."SUPPLIER_COMPANY"
+        ,p."UNITS_ON_ORDER"
+        ,p."UNITS_IN_STOCK"
+        ,p."REORDER_LEVEL"
+        ,p."DISCONTINUED"
+        ,current_timestamp() as insertion_timestamp
+    from KBC_USE4_834.WORKSPACE_21534344.fact_sales s
+    left join KBC_USE4_834.WORKSPACE_21534344.dim_customer c
+    on c."CUSTOMER_ID" = s."CUSTOMER_ID"
+    left join KBC_USE4_834.WORKSPACE_21534344.dim_employee e
+    on e."EMPLOYEE_ID" = s."EMPLOYEE_ID"
+    left join KBC_USE4_834.WORKSPACE_21534344.dim_product p
+    on p."PRODUCT_ID" = s."PRODUCT_ID"
+)
+select * 
+from source
+    )
+[0m15:18:54.983015 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:18:58.848511 [debug] [Thread-1 (]: SQL status: completed 2155 in 3.865 seconds
+[0m15:18:58.851291 [debug] [Thread-1 (]: On model.keboola_northwind.obt_sales_overview: Close
+[0m15:18:58.852255 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c0f09158-f069-47a3-8bac-cb4b8b1cfd40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b8b880>]}
+[0m15:18:58.852997 [info ] [Thread-1 (]: 12 of 12 OK created sql table model WORKSPACE_21534344.obt_sales_overview ...... [[32mcompleted 2155[0m in 3.89s]
+[0m15:18:58.853588 [debug] [Thread-1 (]: Finished running node model.keboola_northwind.obt_sales_overview
+[0m15:18:58.854854 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:18:58.855487 [debug] [MainThread]: Connection 'model.keboola_northwind.obt_sales_overview' was properly closed.
+[0m15:18:58.856087 [info ] [MainThread]: 
+[0m15:18:58.856636 [info ] [MainThread]: Finished running 5 table models, 7 view models in 0 hours 0 minutes and 42.86 seconds (42.86s).
+[0m15:18:58.858118 [debug] [MainThread]: Command end result
+[0m15:18:58.939248 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/manifest.json
+[0m15:18:58.942793 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/semantic_manifest.json
+[0m15:18:58.947551 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/martin/Library/Mobile Documents/com~apple~CloudDocs/Development/keboola_dbt_query_service/target/run_results.json
+[0m15:18:58.947971 [info ] [MainThread]: 
+[0m15:18:58.948339 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:18:58.948632 [info ] [MainThread]: 
+[0m15:18:58.948928 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=12
+[0m15:18:58.949372 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:18:58.952824 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 44.138893, "process_in_blocks": "0", "process_kernel_time": 0.46228, "process_mem_max_rss": "149307392", "process_out_blocks": "0", "process_user_time": 2.455598}
+[0m15:18:58.953332 [debug] [MainThread]: Command `dbt run` succeeded at 15:18:58.953277 after 44.14 seconds
+[0m15:18:58.953769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ef04f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d93970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106264ca0>]}
+[0m15:18:58.954107 [debug] [MainThread]: Flushing usage events
+[0m15:18:59.550829 [debug] [MainThread]: An error was encountered while trying to flush usage events
