@@ -1,0 +1,12 @@
+keboola_northwind:
+  target: dev
+  outputs:
+    dev:
+      type: keboola_snowflake
+      base_url: "{{ env_var('KEBOOLA_NORTHWIND_BASE_URL') }}"
+      token: "{{ env_var('KEBOOLA_NORTHWIND_TOKEN') }}"
+      branch_id: "{{ env_var('KEBOOLA_NORTHWIND_BRANCH_ID') }}"
+      workspace_id: "{{ env_var('KEBOOLA_NORTHWIND_WORKSPACE_ID') }}"
+      database: "{{ env_var('KEBOOLA_NORTHWIND_DATABASE') }}"
+      schema: "{{ env_var('KEBOOLA_NORTHWIND_SCHEMA') }}"
+      warehouse: "{{ env_var('KEBOOLA_NORTHWIND_WAREHOUSE') }}"

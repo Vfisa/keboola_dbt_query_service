@@ -1,4 +1,4 @@
-profiles.yml
+#profiles.yml
 .conda
 .env
 .env.local
@@ -8,3 +8,4 @@ profiles.yml
 .claude
 .vscode/settings.json
 .claude/settings.json
+.user.yml
