@@ -19,6 +19,8 @@ Tables in the `in.c-northwind_dataset` Keboola schema:
 - TERRITORIES
 - US_STATES
 
+You can use `Snowflake SQL - Northwind Seed.json` file to create datasets in Keboola project. Use debug mode to paste the whole thing or use Keboola MCP to create a transformation automatically.
+
 
 ## Run setup
 
